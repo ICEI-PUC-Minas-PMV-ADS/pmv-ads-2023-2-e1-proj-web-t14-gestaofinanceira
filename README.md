@@ -1,12 +1,19 @@
-# Título do Projeto
+<h1 align="center">Economus - Plataforma de gestão financeira</h1>
+
+<p align="center">
+  <img src="documentos/img/logo-economus.png" alt="economus-logo" width="180px" height="180px"/>
+  <br>
+  <em>Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.</em>
+  <br>
+</p>
+
+<hr>
 
 `CURSO`
 
 `DISCIPLINA`
 
 `SEMESTRE`
-
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
 
 ## Integrantes
 

@@ -1,35 +1,60 @@
 # Introdução
 
-[Aqui a equipe deve criar um texto descritivo com a visão geral do problema abordado, apresentando o ambiente e as situações envolvidas no problema.]
+No tempo presente é perceptível o crescimento da população brasileira em atividades remuneradas, tornando cada vez mais essencial a gestão financeira. Enquanto muitos estão iniciando sua jornada no mundo das finanças, uma grande parcela já vivencia as consequências causadas pela má administração de seu capital. 
+
+Entre as adversidades evidenciadas, observa-se que a ausência da organização das finanças pessoais é um dos principais motivos da falta de liberdade e estabilidade econômica.  Nigro (2018, p.15) afirma que “[...] a imensa maioria das pessoas cresceu sem ter recebido noções de educação financeira, seja informalmente, no núcleo familiar, ou formalmente, na escola ou na faculdade”. Esse cenário traz à tona diversas problemáticas no âmbito individual e coletivo. 
+
+Portanto, torna-se imprescindível o desdobramento do assunto para fomentar a adoção de práticas que promovam uma melhora na qualidade de vida financeira, tornando o controle de receitas e despesas algo interativo e de fácil compreensão, para assim, orientar nas próximas etapas da vida ou ajudar quem não sabe por onde começar.  
 
 ## Problema
-[Aqui a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.]
 
-Este link pode ajudar a equipe a entender mais sobre definição do problema: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+O projeto se dispõe a cooperar com a difusão do conhecimento sobre gestão financeira entre os jovens e adultos do país. É notório a ausência de educação financeira nos lares brasileiros, falta de disciplina no controle das finanças e insegurança para investir por não conhecer o assunto levando ao aumento do endividamento na população, perda de oportunidades e redução da qualidade de vida.   
 
+Nota-se também, que as consequências geradas a partir dessa falta de conhecimento desencadeia problemas na esfera familiar, conjugal e emocional. Segundo a pesquisa de Perfil e Comportamento do Endividamento Brasileiro 2022, liderada pela Serasa em parceria com a Opinion Box, 83% dos entrevistados apresentam insônia, 74% enfrentam problemas de concentração para realizar tarefas do cotidiano, 83% experienciam impactos em suas vidas sociais e 78% lidam com pensamentos negativos devido às complicações nas finanças.  
+
+Ademais, podemos afirmar que essa lacuna de informação compromete vários aspectos da vida do cidadão, amplificando de forma exponencial e retardando ainda mais sua estabilidade como um todo. 
 
 ## Objetivos
 
-[Aqui a equipe deve realizar uma descrição detalhada dos objetivos do trabalho, ressaltando quais as questões principais do problema a serem resolvidas pelo projeto, não é a hora de apresentar requisitos detalhados.]
+O principal propósito desta aplicação web é aumentar a conscientização financeira entre os jovens adultos, fornecendo ferramentas e recursos essenciais para incentivar a adoção de hábitos financeiros saudáveis. Além disso, a aplicação busca estimular a participação ativa em investimentos através do conhecimento, para que o indivíduo construa um alicerce sólido nas suas finanças que perdure ao longo da sua vida.  
+
+Como objetivos específicos da aplicação, podemos ressaltar:  
  
-Este link pode ajudar a equipe a entender mais sobre definição dos objetivos: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+* Conscientizar e apoiar o usuário na construção do seu desenvolvimento financeiro; 
+
+* Proporcionar um ambiente dinâmico para incentivar a formação de hábitos de autogerenciamento monetário. 
+
+* Promover uma experiência do usuário para atender as suas necessidades. 
 
 ## Justificativa
 
-[Aqui a equipe deve descrever a importância ou a motivação para trabalhar com o problema definido. Indique as razões pelas quais a equipe escolheu o problema e definiu os objetivos.
+No Brasil, o aumento das dívidas dentre a população é notório, e isso é visível principalmente entre a parte economicamente ativa. À medida que se é analisada a Pesquisa Nacional de Endividamento e Inadimplência do Consumidor (Peic) realizada pela Confederação Nacional do Comércio de Bens, Serviços e Turismo (CNC), é analisado que há crescente de famílias com débitos em atraso por mais tempo vem acentuando e não apresenta uma melhoria expressiva para os próximos meses.  
 
-Devem ser apresentados dados de fontes relevantes e confiáveis sobre o problema, inserindo-o como alvo de estudo. Sugere-se que a equipe utilize questionários, entrevistas e dados estatísticos, que devem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pela equipe.]
+> CNC (2023, p. 1), relata que: 
+o percentual de famílias com dívidas a vencer (cheque pré-datado, cartão de crédito, cheque especial, carnê de loja, crédito consignado, empréstimo pessoal, prestação de carro e de casa) permaneceu inalterado em maio pelo quarto mês consecutivo, representando 78,3% das famílias no País. Desse total, 18% consideram-se “muito endividadas”, maior percentual desde agosto de 2022.
 
-Este link pode ajudar a equipe a formular a justificativa: [Como montar a justificativa.](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Para muitos, essa facilidade na aquisição de produtos bancários se apresenta como a resolução de um problema que, na verdade, se ramifica e cria raízes na vida de muitos brasileiros. 
+
+Nisso, torna-se perceptível a demanda de uma aplicação web, como uma forma de auxiliar na organização e conscientização, bem como, fornecer as pessoas uma ferramenta onde será possível gerir suas finanças de forma fácil e objetiva, centralizando seus gastos e tornando visível parâmetros econômicos e projeção financeira a curto, médio e longo prazo. 
+
+ O aplicativo de gestão permitirá aos usuários administrar suas finanças, definir metas, receber sugestões de planejamento e aprofundar a temática através de recursos educativos. Além disso, funcionalidades dinâmicas serão oferecidas para enriquecer a experiência do usuário. 
 
 ## Público-Alvo
 
-[Aqui é necessário descrever os atores envolvidos no problema, destacando os diferentes perfis de usuários. O propósito é apresentar as características, necessidades, conhecimentos prévios e experiência com a tecnologia do público-alvo.
+No Brasil, é perceptível a necessidade da educação financeira nos ambientes educacionais tradicionais bem como, a falta da divulgação da importância da temática citada. Por isso, o objetivo desse projeto é alcançar o máximo de jovens e adultos inserindo-os no ambiente de gestão de finanças. 
 
-Sugere-se que a equipe utilize questionários e/ou entrevistas a fim de conhecer os atores que compõem o público alvo.]
+Determinou-se a partir das problemáticas apresentadas que o público-alvo do projeto serão jovens, homens e mulheres, acima de 18 anos que, estão começando ativamente no mercado e/ou que não realizam o controle financeiro pessoal, mas que desejam iniciar o planejamento financeiro e se aprofundar no âmbito da organização financeira.  
 
-Os links abaixo podem ajudar a equipe a conhecer um pouco mais sobre o público-alvo. 
+Para conhecer melhor o público em foco, realizou-se um questionário de mapeamento com 83 pessoas, cujo objetivo era compreender o valor que há na gestão financeira para eles, o que possibilitou identificar alguns aspectos. São eles: 
 
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
+* Dentre as respostas, embora 83% tenham consciência da importância da educação financeira, somente 17% fizeram algum curso sobre o assunto;  
 
+* 69% responderam que é de suma relevância um aplicativo ou site de controle de finanças, no entanto, somente 13% utilizam desses meios para o controle financeiro; 
+
+* Os três principais motivos do não uso de sites e/ou aplicativos de gestão de finanças dentre as respostas, são: não possuem hábito ou disciplina (34%), não sabem como fazer (26%), outros motivos (26%) e sentem preguiça (4%). 
+
+Além dessas características citadas acima, foi-se analisada a necessidade de alguns quesitos, como:  
+
+* A demanda de maior conhecimento e aprofundamento nos assuntos que englobam a gestão financeira em meio ao público; 
+
+* Necessidade de sites e/ou aplicativos interativos para que haja incentivos ajudando na construção da disciplina no controle das finanças e orientando-os com eficiência. 

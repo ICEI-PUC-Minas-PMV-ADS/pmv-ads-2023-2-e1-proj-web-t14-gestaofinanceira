@@ -50,6 +50,11 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 
 **Done**: As tarefas que foram revisadas e aprovadas são consideradas concluídas.
 
+O quadro kanban do grupo desenvolvido na ferramenta de gerenciamento de projetos está disponível através da URL do GitHub Project disponível na guia [Ferramentas] e é apresentado, no estado atual, na Figura economus-development-workflow.
+
+![economus-development-workflow-image](img/economus-development-workflow.png)
+Figura 'economus-development-workflow' - Tela do Kanban utilizado pelo grupo
+
 ### Etiquetas
 <p>As tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:</p>
 

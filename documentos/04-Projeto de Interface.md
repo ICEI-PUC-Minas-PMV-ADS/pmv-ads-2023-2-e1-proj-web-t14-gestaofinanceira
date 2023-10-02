@@ -122,7 +122,7 @@ Figura 'loss-statement.png' - Tela Minhas Despesas
 
 * **Botão de Edição**: Este elemento permite aos usuários adicionar ou editar categorias de receitas. Quando clicado, ele carrega uma nova tela ou componente dentro da página atual, onde os usuários podem inserir ou alterar informações. Eles poderiam selecionar se a receita é fixa ou variável e inserir o valor correspondente. Uma vez que as alterações estejam completas, elas poderiam ser salvas e refletidas na lista de categorias na tela “Minhas Receitas”. Esta nova tela ou componente é encerrada após o tempo de edição, retornando o usuário à tela original “Minhas Receitas”. Veja a imagem abaixo para uma representação visual do botão de edição.
 ![profit-statement-list-image](img/prototype/profit-statement-list.png)
-Figura 'profit-statement-list.png' - Tela Minhas Despesas
+Figura 'profit-statement-list.png' - Tela Minhas Receitas
 
 ![profit-statement-image](img/prototype/profit-statement.png)
-Figura 'proft-statement.png' - Tela Minhas Despesas
+Figura 'proft-statement.png' - Tela Minhas Receitas

@@ -5,8 +5,11 @@
 
 O diagrama apresentado na Figura 'userflow.png' mostra o fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Wireframes que se segue. Para visualizar o wireframe interativo, acesse o ambiente Figma do projeto.
 
-![userflow-image](img/userflow.png)
-Figura 'userflow' - Fluxo de telas do usuário
+<div style="text-align:left;">
+  <img src="img/userflow.png" alt="User flow image" style="max-width:100%; height:auto;">
+</div>
+
+<p style="clear:left;">Figura 'userflow' - Fluxo de telas do usuário</p>
 
 ## Protótipo
 
@@ -24,8 +27,11 @@ Figura 'userflow' - Fluxo de telas do usuário
 
 * **Gráfico e Informações Complementares**: Localizado no centro da página, exibe um gráfico e informações complementares.
 
-![index-image](img/prototype/index.png)
-Figura 'index.png' - Tela index (homepage)
+<div style="text-align:left;">
+  <img src="img/prototype/index.png" alt="homepage image" style="max-width:100%; height:auto;">
+</div>
+
+<p style="clear:left;">Figura 'index.png' - homepage</p>
 
 ---
 
@@ -39,21 +45,27 @@ Figura 'index.png' - Tela index (homepage)
 
 * **Elemento de Cadastro**: Localizado no canto inferior direito da tela, permite aos usuários criar uma nova conta.
 
-![login-image](img/prototype/login.png)
-Figura 'login.png' - Tela login
- 
+<div style="text-align:left;">
+  <img src="img/prototype/login.png" alt="login image" style="max-width:100%; height:auto;">
+</div>
+
+<p style="clear:left;">Figura 'login.png' - Tela login</p>
+
  ---
 
- ***Tela - Registo***
+ ***Tela - Signup***
 
-* **Campos de Registro**: Localizados no canto superior esquerdo, incluem campos para inserir nome, email, senha e confirmar senha.
+* **Campos do Cadastro**: Localizados no canto superior esquerdo, incluem campos para inserir nome, email, senha e confirmar senha.
 
 * **Checkbox de Aceite dos Termos de Uso**: Localizado no canto inferior esquerdo, permite aos usuários concordar com os termos de uso antes de se registrarem.
 
 * **Elemento de Cadastro**: Localizado no canto inferior direito, permite aos usuários finalizarem o processo de registro.
 
-![signup-image](img/prototype/signup.png)
-Figura 'signup.png' - Tela registro
+<div style="text-align:left;">
+  <img src="img/prototype/signup.png" alt="signup image" style="max-width:100%; height:auto;">
+</div>
+
+<p style="clear:left;">Figura 'signup.png' - Tela Signup</p>
 
 ---
 
@@ -65,8 +77,11 @@ Figura 'signup.png' - Tela registro
 
 * **Botão ‘Encerrar Sessão’**: Localizado no canto inferior direito, permite aos usuários encerrar a sessão atual.
 
-![profile-image](img/prototype/profile.png)
-Figura 'profile.png' - Tela do Perfil
+<div style="text-align:left;">
+  <img src="img/prototype/profile.png" alt="profile image" style="max-width:100%; height:auto;">
+</div>
+
+<p style="clear:left;">Figura 'profile.png' - Tela do Perfil</p>
 
 ---
 
@@ -82,8 +97,11 @@ Figura 'profile.png' - Tela do Perfil
 
 * **Objetivos**: Este elemento de texto está centralizado abaixo do componente editar. Abaixo dele, há elementos que podem ser adicionados (ex.: viajar, comprar carro) pelo botão ‘Adicionar’.
 
-![my-goals-image](img/prototype/my-goals.png)
-Figura 'my-goals.png' - Tela Minhas Metas
+<div style="text-align:left;">
+  <img src="img/prototype/my-goals.png" alt="My goals image" style="max-width:100%; height:auto;">
+</div>
+
+<p style="clear:left;">Figura 'my-goals.png' - Tela Minhas Metas</p>
 
 ---
 
@@ -100,11 +118,19 @@ Figura 'my-goals.png' - Tela Minhas Metas
 * **Menu Lateral Direito**: Localizado à direita da página, abaixo do menu ‘Minhas Despesas’ e ao lado das informações de categorias e valores. Este menu contém o mês atual e, abaixo, os elementos ‘Variáveis’ e ‘Fixas’ com os respectivos valores. Abaixo desses elementos, há uma lista geral contendo as categorias à esquerda e o valor à direita. Logo abaixo à direita o componente botão 'editar'
 
 * **Botão de Edição**: Este elemento permite aos usuários adicionar ou editar categorias de despesas. Quando clicado, ele carrega uma nova tela ou componente dentro da página atual, onde os usuários podem inserir ou alterar informações. Eles poderiam selecionar se a despesa é fixa ou variável e inserir o valor correspondente. Uma vez que as alterações estejam completas, elas poderiam ser salvas e refletidas na lista de categorias na tela “Minhas Despesas”. Esta nova tela ou componente é encerrada após o tempo de edição, retornando o usuário à tela original “Minhas Despesas”. Veja a imagem abaixo para uma representação visual do botão de edição.
-![loss-statement-list-image](img/prototype/loss-statement-list.png)
-Figura 'loss-statement-list.png' - Tela Minhas Despesas
+<div style="text-align:center;">
+  <img src="img/prototype/loss-statement-list.png" alt="loss statement list image" style="max-width:100%; height:auto;">
+</div>
 
-![loss-statement-image](img/prototype/loss-statement.png)
-Figura 'loss-statement.png' - Tela Minhas Despesas
+<p style="text-align:center;">Figura 'loss-statement-list.png' - Tela Lista de Minhas Despesas</p>
+
+<br>
+
+<div style="text-align:left;">
+  <img src="img/prototype/loss-statement.png" alt="loss statement image" style="max-width:100%; height:auto;">
+</div>
+
+<p style="clear:left;">Figura 'loss-statement.png' - Tela Minhas Despesas</p>
 
 ---
 
@@ -121,8 +147,17 @@ Figura 'loss-statement.png' - Tela Minhas Despesas
 * **Menu Lateral Direito**: Localizado à direita da página, abaixo do menu ‘Minhas Receitas’ e das informações de categorias e valores. Este menu contém o mês atual e, abaixo, os elementos ‘Variáveis’ e ‘Fixas’ com os respectivos valores. Abaixo desses elementos, há uma lista geral contendo as categorias à esquerda e o valor à direita.
 
 * **Botão de Edição**: Este elemento permite aos usuários adicionar ou editar categorias de receitas. Quando clicado, ele carrega uma nova tela ou componente dentro da página atual, onde os usuários podem inserir ou alterar informações. Eles poderiam selecionar se a receita é fixa ou variável e inserir o valor correspondente. Uma vez que as alterações estejam completas, elas poderiam ser salvas e refletidas na lista de categorias na tela “Minhas Receitas”. Esta nova tela ou componente é encerrada após o tempo de edição, retornando o usuário à tela original “Minhas Receitas”. Veja a imagem abaixo para uma representação visual do botão de edição.
-![profit-statement-list-image](img/prototype/profit-statement-list.png)
-Figura 'profit-statement-list.png' - Tela Minhas Receitas
 
-![profit-statement-image](img/prototype/profit-statement.png)
-Figura 'proft-statement.png' - Tela Minhas Receitas
+<div style="text-align:center;">
+  <img src="img/prototype/profit-statement-list.png" alt="profit statement list image" style="max-width:100%; height:auto;">
+</div>
+
+<p style="text-align:center;">Figura 'profit-statement-list.png' - Tela Lista de Minhas Receitas</p>
+
+<br>
+
+<div style="text-align:left;">
+  <img src="img/prototype/profit-statement.png" alt="profit statement image" style="max-width:100%; height:auto;">
+</div>
+
+<p style="clear:left;">Figura 'proft-statement.png' - Tela Minhas Receitas</p>

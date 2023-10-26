@@ -1,0 +1,105 @@
+body {
+    background-color: #201B2C;
+    font-family: sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+.container{
+    width: 55%;
+    height: 715px;
+    float: left;
+    margin: auto;
+    position: relative;
+}
+.container img{
+    height: 100%;
+    width: 100%;
+}
+.container div {
+    position: absolute;
+    text-align: center;
+    background: transparent;
+    margin-top: 5px;
+    top: 0;
+    left: 27.5%;
+    transition: translate (-50%);
+    font-size: 25px;
+
+}
+.container p{
+    position: absolute;
+    text-align: center;
+    background: transparent;
+    margin-bottom: 10px;
+    bottom: 0;
+    left: 27.5%;
+    transition: translate (-50%);
+    font-size: 12px;
+}
+.container span {
+    content: '\\00A9';
+ }
+ 
+.login{
+    width: 45%;
+    height: 100%;
+    float: left;
+    margin: 0;
+    text-align: center;
+}
+.login p{
+    position: relative;
+    bottom: 113px;
+    font-size: 18px;
+    width: 23%;
+    left: 123px;
+}
+.login p:hover{
+    color: #ff0000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+label{
+    position: relative;
+    font-size: 19px;
+    right: 170px;
+    top: 50px;
+}
+input{
+    position: relative;
+    border-radius: 5px;
+    height: 60px;
+    width: 400px;
+    top: 50px;
+    background-color: #514069;
+    font-size: 30px;
+}
+.login h4{
+    margin-top: 140px;
+align-items: center;
+    width: 100%;
+}
+.login h4:hover{
+    color: #6495ED;
+    text-decoration: underline;
+    cursor: pointer;
+}
+button{
+    margin-top: 100px;
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #201B2C;
+    border-color: #201B2C;
+    background-color: #6495ED;
+
+}
+button:hover{
+    background-color: #00FF7F;
+    color: #000000  ;
+    cursor: pointer;
+}
+#rodape{
+    clear: both;
+}

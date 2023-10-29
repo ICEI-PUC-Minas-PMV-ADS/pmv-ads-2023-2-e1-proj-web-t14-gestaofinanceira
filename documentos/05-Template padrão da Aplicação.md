@@ -18,7 +18,6 @@ Exibe informações como receitas, despesas e metas.
   <img src="img/prototype/index.png" alt="homepage image" style="max-width:100%; height:auto;">
 </div>
 
-<p style="clear:left;">Figura 'index.png' - homepage</p>
 
 
 Figura 1 - Tela Principal
@@ -31,7 +30,6 @@ Exibe informações sobre as despesas, despesas por categoria e próximas despes
   <img src="img/prototype/loss-statement.png" alt="loss statement image" style="max-width:100%; height:auto;">
 </div>
 
-<p style="clear:left;">Figura 'loss-statement.png' - Tela Minhas Despesas</p>
 
 
 Figura 2 - Tela de Despesas
@@ -41,7 +39,5 @@ Para a criação do logotipo do site foi utilizada a cor roxo. A utilização da
 <div style="text-align:left;">
   <img src="img/logo-economus.png" alt="logo-economus" style="max-width:100%; height:auto;">
 </div>
-
-<p style="clear:left;">Figura 'logo-economus.png' - Imagem Logo Economus</p>
 
 Figura 3 - Logotipo da aplicação web ECONOMUS

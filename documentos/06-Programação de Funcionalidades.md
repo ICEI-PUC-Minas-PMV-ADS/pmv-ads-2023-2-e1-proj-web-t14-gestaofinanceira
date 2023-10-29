@@ -15,7 +15,10 @@ RF-01: O site deve permitir ao usuário cadastrar uma conta.
 
 #### Artefatos da funcionalidade
 
-[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+* Form.css
+* cadastro.html
+* cadastro.js
+* error-handling.js 
 
 
 #### Estrutura de Dados
@@ -49,7 +52,12 @@ RF-02: O site deve permitir ao usuário fazer o login da sua conta.
 
 #### Artefatos da funcionalidade
 
-[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+* app.js
+* icone-da-pagina_resized.ico
+* logo-login.png
+* style.css
+* tela-de-login.html
+
 
 
 #### Estrutura de Dados
@@ -83,7 +91,9 @@ RF-00: O site deve permitir ao usuário editar e visualizar suas despesas.
 
 #### Artefatos da funcionalidade
 
-[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+* user-profit-statement.css
+* user-profit-statement.html
+* user-profit-statement.js 
 
 
 #### Estrutura de Dados

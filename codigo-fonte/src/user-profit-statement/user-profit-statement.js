@@ -38,7 +38,7 @@ listaTabela() {
 
         let imgDelete = document.createElement('img');
         imgDelete.src = 'img/delete.png';
-        imgDelete.setAttribute("onclick", "receita.deletar()");
+        imgDelete.setAttribute("onclick", "receita.deletar("+ this.arrayReceitas[i].id +")");
 
         td_acoes.appendChild(imgDelete);
     }
@@ -85,8 +85,6 @@ listaTabela() {
     }
 
     deletar(id) {
-
-        alert('deletar o ID' + id);
 
         let tbody = document.getElementById('tbody');
 

@@ -4,8 +4,9 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 ### Tela de Cadastro (RF-01)
 
-[Adicione imagem da funcionalidade/tela]
-
+<div style="text-align:left;">
+  <img src="img/prototype/signup.png" alt="signup image" style="max-width:100%; height:auto;">
+</div>
 
 #### Requisito atendido
 
@@ -35,7 +36,10 @@ Luiz Gustavo
 
 ### Tela de Login (RF-02)
 
-[Adicione imagem da funcionalidade/tela]
+<div style="text-align:left;">
+  <img src="img/prototype/login.png" alt="login image" style="max-width:100%; height:auto;">
+</div>
+
 
 
 #### Requisito atendido
@@ -65,14 +69,16 @@ Miguel
 
 
 
-### Tela de Login (RF-02)
+### Tela de Despesas (RF-00)
 
-[Adicione imagem da funcionalidade/tela]
+<div style="text-align:left;">
+  <img src="img/prototype/loss-statement.png" alt="loss statement image" style="max-width:100%; height:auto;">
+</div>
 
 
 #### Requisito atendido
 
-RF-03: O site deve permitir ao usuário editar e visualizar suas despesas.
+RF-00: O site deve permitir ao usuário editar e visualizar suas despesas.
 
 
 #### Artefatos da funcionalidade

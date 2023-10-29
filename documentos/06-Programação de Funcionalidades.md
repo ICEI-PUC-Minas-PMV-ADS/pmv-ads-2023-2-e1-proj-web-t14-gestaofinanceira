@@ -98,12 +98,12 @@ RF-00: O site deve permitir ao usuário editar e visualizar suas despesas.
 
 #### Estrutura de Dados
 
-[Caso exista estrutura de dados, adicione aqui]
+<a href= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t14-gestaofinanceira/blob/0ce53da7870587394e889901be4d01b1d849ad60/codigo-fonte/src/user-profit-statement/user-profit-statement.html"> user-profit-statement.html</a>
 
 
 #### Instruções de acesso
 
-Abra um navegador de Internet e informe a seguinte URL:
+Abra um navegador de Internet e informe a seguinte URL: 
 Ao clicar em “Minhas Despesas” localizado no topo da página, contém o logo à esquerda e o nome ‘Minhas Despesas’ à direita do logo. 
 
 #### Responsável

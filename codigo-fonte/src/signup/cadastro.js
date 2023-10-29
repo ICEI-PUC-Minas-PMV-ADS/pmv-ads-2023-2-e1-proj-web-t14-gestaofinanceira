@@ -14,6 +14,11 @@ form.addEventListener("submit", (e)=>{
             password: userpassword.value
         };
         localStorage.setItem(user.email, JSON.stringify(user));
+
+        username.value = '';
+        useremail.value = '';
+        userpassword.value = '';
+        userpassword2.value = '';
     } 
 });
 

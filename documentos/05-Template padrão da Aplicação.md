@@ -37,7 +37,7 @@ Figura 2 - Tela de Despesas
 Para a criação do logotipo do site foi utilizada a cor roxo. A utilização da imagem do polvo como protetor da vida financeira fazendo uma analogia ao polvo que protege o baú do tesouro impedindo-o de ser usurpado.
 
 <div style="text-align:left;">
-  <img src="img/logo-economus.png" alt="logo-economus" style="max-width:100%; height:auto;">
+  <img src="img/logo-economus.png" alt="logo-economus" style="width:40px; height:40px;">
 </div>
 
 Figura 3 - Logotipo da aplicação web ECONOMUS

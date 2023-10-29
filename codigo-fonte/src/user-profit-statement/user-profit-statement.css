@@ -2,13 +2,13 @@
     width: auto;
     padding: 0px 10px;
     overflow: auto;
-    text-align:left;
+    text-align: left;
     background-color: #201b2c;
     color: white;
     font-family: sans-serif;
 }
 
-.navegacaoPrincipal{
+.navegacaoPrincipal {
     text-align: right;
 }
 
@@ -26,7 +26,7 @@ a {
 
 }
 
-h1{
+h1 {
     padding-left: 130px;
     padding-top: 0px;
 }

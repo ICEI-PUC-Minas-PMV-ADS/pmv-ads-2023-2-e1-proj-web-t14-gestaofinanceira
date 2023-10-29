@@ -1,12 +1,33 @@
 # Template padrão da Aplicação
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual e a linguagem de programação JavaScript foi utilizada para a construção do menu responsivo.
 
-[Apresente a estrutura padrão da sua aplicação.]
+As páginas terão como elementos padrões o menu de navegação, o header, além dos elementos de identidade visual citados abaixo:
 
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+* **Cores:** 
+* **Font-family:** 
+* **Font-size:** 
+
+O código utilizado para a construção dos elementos citados, incluindo a responsividade, pode ser consultado aqui. As imagens e ícones utilizados no projeto estão disponíveis aqui.
+
+### Tela de visualização das Finanças
+
+Exibe informações como receitas, despesas e metas.
+
+* IMAGEM
+
+Figura 1 - Tela Principal
+
+### Tela de visualização das Despesas 
+
+Exibe informações sobre as despesas, despesas por categoria e próximas despesas.
+
+* IMAGEM
+
+Figura 2 - Tela de Despesas
+
+Para a criação do logotipo do site foi utilizada a cor roxo. A utilização da imagem do polvo como protetor da vida financeira fazendo uma analogia ao polvo que protege o baú do tesouro impedindo-o de ser usurpado.
+
+* IMAGEM 
+
+Figura 3 - Logotipo da aplicação web ECONOMUS

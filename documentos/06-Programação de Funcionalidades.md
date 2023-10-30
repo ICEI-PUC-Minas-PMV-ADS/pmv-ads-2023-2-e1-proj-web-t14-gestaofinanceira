@@ -2,43 +2,118 @@
 
 Implementação da aplicação descritas por meio dos requisitos codificados. 
 
-[Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
+### Tela de Cadastro (RF-01)
 
-### Título da funcionalidade
-
-[Adicione imagem da funcionalidade/tela]
-
+<div style="text-align:left;">
+  <img src="img/prototype/signup.png" alt="signup image" style="max-width:100%; height:auto;">
+</div>
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
+* RF-01: Permiti o usuário cadastrar uma conta.
 
 
 #### Artefatos da funcionalidade
 
-[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+* Form.css
+* cadastro.html
+* cadastro.js
+* error-handling.js 
 
 
 #### Estrutura de Dados
 
-[Caso exista estrutura de dados, adicione aqui]
+* <a href= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t14-gestaofinanceira/blob/feature/user-authentication/codigo-fonte/src/signup/cadastro.html">cadastro.html</a>
 
 
 #### Instruções de acesso
 
-[Adicione as orientações de acesso à funcionalidade]
+* Abra um navegador de Internet e informe a seguinte URL:
+* Ao clicar em “Cadastre-se” localizado no canto inferior direito, permite aos usuários finalizarem o processo de registro.
 
 
 #### Responsável
 
-[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
+Luiz Gustavo
+
+
+### Tela de Login (RF-01)
+
+<div style="text-align:left;">
+  <img src="img/prototype/login.png" alt="login image" style="max-width:100%; height:auto;">
+</div>
+
+
+
+#### Requisito atendido
+
+* RF-01: Permiti que o usuário faça login de sua conta.
+
+
+#### Artefatos da funcionalidade
+
+* app.js
+* icone-da-pagina_resized.ico
+* logo-login.png
+* style.css
+* tela-de-login.html
+
+
+
+#### Estrutura de Dados
+
+* <a href= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t14-gestaofinanceira/blob/34e67f48efd11f1d2d3fce27a9dec55c98e5d572/codigo-fonte/src/user-login/tela-de-login.html">tela-de-login.html</a>
+
+
+#### Instruções de acesso
+
+* Abra um navegador de Internet e informe a seguinte URL:
+* Ao clicar em “Entrar” no canto inferior direito da tela, terá acesso a página da HomePage.
+
+
+#### Responsável
+
+Miguel
+
+
+
+### Tela de Despesas (RF-09, RF-10)
+
+<div style="text-align:left;">
+  <img src="img/prototype/loss-statement.png" alt="loss statement image" style="max-width:100%; height:auto;">
+</div>
+
+
+#### Requisito atendido
+
+* RF-09: Permiti que o usuário nomeie suas despesas.
+* RF-10: Capacidade de adicionar ou excluir despesas fixas e recorrentes. 
+
+
+#### Artefatos da funcionalidade
+
+* user-profit-statement.css
+* user-profit-statement.html
+* user-profit-statement.js 
+
+
+#### Estrutura de Dados
+
+* <a href= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t14-gestaofinanceira/blob/0ce53da7870587394e889901be4d01b1d849ad60/codigo-fonte/src/user-profit-statement/user-profit-statement.html"> user-profit-statement.html</a>
+
+
+#### Instruções de acesso
+
+* Abra um navegador de Internet e informe a seguinte URL: 
+* Ao clicar em “Minhas Despesas” localizado no topo da página, contém o logo à esquerda e o nome ‘Minhas Despesas’ à direita do logo. 
+
+#### Responsável
+
+Gabriel e Letícia 
 
 
 
 
-> **Links Úteis**:
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
+
+
 

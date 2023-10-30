@@ -5,77 +5,134 @@
     <meta charset="UTF-8">
     <meta name=" " viewport" content="width = device-width, initial-scale=1.0">
     <link rel="stylesheet" href="user-profit-statement.css">
-    <title> Minhas Despesas </title>
+    <script src="user-profit-statement.js"></script>
+    <title> Economus-Minhas Despesas </title>
 </head>
 
 <body>
-    
-    <div class="cabecalho">
-        <h1> Minhas Despesas </h1>
-        <h2> Minhas Receitas</h2>
-        <h2> Minhas Metas</h2>
-        <h2> Meu Perfil</h2>
+
+    <div class="secao">
+
+        <img class="economus" src="img/logo-economus.png">
+        <h1>Minhas Despesas</h1>
+
+        <p class="navegacaoPrincipal">
+            <a href="#receitas">Minhas Receitas</a>
+            <a href="#metas">Minhas Metas</a>
+            <a href="#perfil">Meu Perfil</a>
+        </p>
+
 
     </div>
 
     <div class="subtitulo">
-        <p> Aqui você pode colocar </p>
+        <p> Aqui você pode colocar todas as despesas que teve durante do mês!<br>
+            Atualize sempre que necessário para manter o seu controle de despesas em dia </p>
 
     </div>
 
-    <div class="categoria">
+    <div class="despesasCategoria">
         <h2> Despesas por Categoria</h2>
-        <ul type="disc">
-            <li>Casa</li>
-            <li>Educação</li>
-        </ul>
+
+        <table>
+            <tr>
+                <td>Casa</td>
+                <td>R$ 700,00</td>
+            </tr>
+
+            <tr>
+                <td>Educação</td>
+                <td>R$ 565,00</td>
+            </tr>
+
+            <tr>
+                <td>Alimentação</td>
+                <td>R$ 300,00</td>
+            </tr>
+
+            <tr>
+                <td>Lazer</td>
+                <td>R$ 200,00</td>
+            </tr>
+
+        </table>
+
     </div>
 
     <div class="proximasDespesas">
         <h2> Próximas Despesas</h2>
+
+        <table>
+            <tr>
+                <td>Mensalidade da Faculdade</td>
+                <td>- 01/10/2023</td>
+            </tr>
+
+            <tr>
+                <td>Aluguel</td>
+                <td>- 05/10/2023</td>
+            </tr>
+
+            <tr>
+                <td>Streaming</td>
+                <td>- 10/10/2023</td>
+            </tr>
+
+
+        </table>
+
     </div>
 
-    <div class="mes">
-        <h2> mês </h2>
+    <div class="mesatual">
+        <h2> Outubro </h2>
         <h3> Variáveis </h3>
         <h3> Fixas </h3>
     </div>
 
-<!-- Aqui começa o card de adicionar a lista de despesas -->
+    <!-- Aqui começa o card de adicionar a lista de despesas -->
 
-    <div class="Despesascard">
-        <h2> Despesas </h2>
-    
+    <main>
 
-    <div class="inputcontas">
-        <label>Tipo:</label>
-        <input type="text" id="despesa" placeholder="Tipo de Despesa"
+        <div class="Despesascard">
+            <h2> Despesas </h2>
+        </div>    
 
-    </div>
+        <script>
+            const receita = new Receita();
+        </script>
 
-    <div class="inputvalor">
-    <label>Valor</label>
-    <input type="number" id="Valor:" placeholder="Valor da despesa"
+        <div class="card">
+            <div class="inputreceita">
+                <label>Tipo:</label>
+                <input type="text" id="receita" placeholder="Tipo de Receita" 
+        
+            </div>
 
-    </div>
+            <div class="inputvalor">
+                <label>Valor: </label>
+                <input type="number" id="valor" placeholder="Valor de Receita" 
+            </div>
 
-<button onclick="despesa.salvar()">Salvar</button>
-<button onclick="despesa.Limpar()">Limpar</button>
+                <button onclick="receita.salvar()">Salvar</button> 
+                <button onclick="receita.cancelar()">Cancelar</button>
+                
+        </div>
 
-    <div class="resultado">
-        <table border="1">
-            <thead>
+        <div class="tabelaresultado">
+            <table border="1">
+                <thead>
+                    <th class="center">ID</th>
+                    <th>Receita</th>
+                    <th>Valor</th>
+                    <th class="center">Ações</th>
+                </thead>
+                <tbody id="tbody" </table>
 
-            <th class="center">Despesa</th>
-            <th>Valor</th>
-            <th class="center">Ações</th>
-            </thead>
-            <tbody id="tbody"
-        </table>
-    </div>
+                </tbody>
+            </table>          
+        </div>
 
-
+    </main>
 
 </body>
-
 </html>

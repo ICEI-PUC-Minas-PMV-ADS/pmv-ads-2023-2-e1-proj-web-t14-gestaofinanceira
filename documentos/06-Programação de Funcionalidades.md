@@ -87,7 +87,7 @@ Miguel
 #### Requisito atendido
 
 * RF-09: Permiti que o usuário nomeie suas despesas.
-* RF-10: Capacidade de adionar, editar ou excluir despesas fixas e recorrentes. 
+* RF-10: Capacidade de adicionar ou excluir despesas fixas e recorrentes. 
 
 
 #### Artefatos da funcionalidade

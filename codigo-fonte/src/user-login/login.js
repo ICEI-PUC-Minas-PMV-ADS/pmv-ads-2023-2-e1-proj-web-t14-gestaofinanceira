@@ -1,4 +1,5 @@
-document.getElementById('login-form').addEventListener('submit', function (e) {
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById('login-form').addEventListener('submit', function (e) {
     e.preventDefault();
 
     const username = document.getElementById('username').value;
@@ -9,20 +10,22 @@ document.getElementById('login-form').addEventListener('submit', function (e) {
     } else {
         alert('Login falhou. Por favor verifique suas credenciais.');
     }
-});
+    });
 
-function checkLogin(username, password) {
-    const userData = fetchUserData();
 
-    for (const user of userData.users) {
-        if (user.name === username && user.password === password) {
-            return true;
+    function checkLogin(username, password) {
+        const userData = fetchUserData();
+
+        for (const user of userData.users) {
+            if (user.name === username && user.password === password) {
+                return true;
+            }
         }
+
+        return false;
     }
 
-    return false;
-}
-
-function fetchUserData() {
-    return JSON.parse(localStorage.getItem('user-data')) || { users: [] };
-}
+    function fetchUserData() {
+        return JSON.parse(localStorage.getItem('user-data')) || { users: [] };
+    }
+});

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name=" " viewport" content="width = device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="user-profit-statement.css">
+    <title> Minhas Despesas </title>
+</head>
+
+<body>
+    
+    <div class="cabecalho">
+        <h1> Minhas Despesas </h1>
+        <h2> Minhas Receitas</h2>
+        <h2> Minhas Metas</h2>
+        <h2> Meu Perfil</h2>
+
+    </div>
+
+    <div class="subtitulo">
+        <p> Aqui você pode colocar </p>
+
+    </div>
+
+    <div class="categoria">
+        <h2> Despesas por Categoria</h2>
+        <ul type="disc">
+            <li>Casa</li>
+            <li>Educação</li>
+        </ul>
+    </div>
+
+    <div class="proximasDespesas">
+        <h2> Próximas Despesas</h2>
+    </div>
+
+    <div class="mes">
+        <h2> mês </h2>
+        <h3> Variáveis </h3>
+        <h3> Fixas </h3>
+    </div>
+
+<!-- Aqui começa o card de adicionar a lista de despesas -->
+
+    <div class="Despesascard">
+        <h2> Despesas </h2>
+    
+
+    <div class="inputcontas">
+        <label>Tipo:</label>
+        <input type="text" id="despesa" placeholder="Tipo de Despesa"
+
+    </div>
+
+    <div class="inputvalor">
+    <label>Valor</label>
+    <input type="number" id="Valor:" placeholder="Valor da despesa"
+
+    </div>
+
+<button onclick="despesa.salvar()">Salvar</button>
+<button onclick="despesa.Limpar()">Limpar</button>
+
+    <div class="resultado">
+        <table border="1">
+            <thead>
+
+            <th class="center">Despesa</th>
+            <th>Valor</th>
+            <th class="center">Ações</th>
+            </thead>
+            <tbody id="tbody"
+        </table>
+    </div>
+
+
+
+</body>
+
+</html>

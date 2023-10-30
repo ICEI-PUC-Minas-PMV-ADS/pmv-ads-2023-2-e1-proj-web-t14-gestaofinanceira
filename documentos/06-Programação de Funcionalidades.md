@@ -23,7 +23,7 @@ RF-01: O site deve permitir ao usuário cadastrar uma conta.
 
 #### Estrutura de Dados
 
-[Caso exista estrutura de dados, adicione aqui]
+* <a href= ">
 
 
 #### Instruções de acesso
@@ -62,7 +62,7 @@ RF-02: O site deve permitir ao usuário fazer o login da sua conta.
 
 #### Estrutura de Dados
 
-[Caso exista estrutura de dados, adicione aqui]
+* <a href= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t14-gestaofinanceira/blob/34e67f48efd11f1d2d3fce27a9dec55c98e5d572/codigo-fonte/src/user-login/tela-de-login.html">tela-de-login.html</a>
 
 
 #### Instruções de acesso
@@ -98,7 +98,7 @@ RF-00: O site deve permitir ao usuário editar e visualizar suas despesas.
 
 #### Estrutura de Dados
 
-<a href= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t14-gestaofinanceira/blob/0ce53da7870587394e889901be4d01b1d849ad60/codigo-fonte/src/user-profit-statement/user-profit-statement.html"> user-profit-statement.html</a>
+* <a href= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t14-gestaofinanceira/blob/0ce53da7870587394e889901be4d01b1d849ad60/codigo-fonte/src/user-profit-statement/user-profit-statement.html"> user-profit-statement.html</a>
 
 
 #### Instruções de acesso

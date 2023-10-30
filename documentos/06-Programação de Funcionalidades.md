@@ -10,7 +10,7 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 #### Requisito atendido
 
-RF-01: O site deve permitir ao usuário cadastrar uma conta.
+RF-01: Permiti o usuário cadastrar uma conta.
 
 
 #### Artefatos da funcionalidade
@@ -37,7 +37,7 @@ RF-01: O site deve permitir ao usuário cadastrar uma conta.
 Luiz Gustavo
 
 
-### Tela de Login (RF-09, RF-10)
+### Tela de Login (RF-01)
 
 <div style="text-align:left;">
   <img src="img/prototype/login.png" alt="login image" style="max-width:100%; height:auto;">
@@ -47,8 +47,7 @@ Luiz Gustavo
 
 #### Requisito atendido
 
-RF-09: Permitir que o usuário nomeie suas despesas.
-RF-10: Capacidade de adionar, editar ou excluir despesas fixas e recorrentes. 
+RF-01: Permiti que o usuário faça login de sua conta.
 
 
 #### Artefatos da funcionalidade
@@ -78,7 +77,7 @@ Miguel
 
 
 
-### Tela de Despesas (RF-00)
+### Tela de Despesas (RF-09, RF-10)
 
 <div style="text-align:left;">
   <img src="img/prototype/loss-statement.png" alt="loss statement image" style="max-width:100%; height:auto;">
@@ -87,7 +86,8 @@ Miguel
 
 #### Requisito atendido
 
-RF-00: O site deve permitir ao usuário editar e visualizar suas despesas.
+RF-09: Permiti que o usuário nomeie suas despesas.
+RF-10: Capacidade de adionar, editar ou excluir despesas fixas e recorrentes. 
 
 
 #### Artefatos da funcionalidade

@@ -28,8 +28,8 @@ RF-01: O site deve permitir ao usuário cadastrar uma conta.
 
 #### Instruções de acesso
 
-Abra um navegador de Internet e informe a seguinte URL:
-Ao clicar em “Cadastre-se” localizado no canto inferior direito, permite aos usuários finalizarem o processo de registro.
+* Abra um navegador de Internet e informe a seguinte URL:
+* Ao clicar em “Cadastre-se” localizado no canto inferior direito, permite aos usuários finalizarem o processo de registro.
 
 
 #### Responsável
@@ -67,8 +67,8 @@ RF-02: O site deve permitir ao usuário fazer o login da sua conta.
 
 #### Instruções de acesso
 
-Abra um navegador de Internet e informe a seguinte URL:
-Ao clicar em “Entrar” no canto inferior direito da tela, terá acesso a página da HomePage.
+* Abra um navegador de Internet e informe a seguinte URL:
+* Ao clicar em “Entrar” no canto inferior direito da tela, terá acesso a página da HomePage.
 
 
 #### Responsável
@@ -103,8 +103,8 @@ RF-00: O site deve permitir ao usuário editar e visualizar suas despesas.
 
 #### Instruções de acesso
 
-Abra um navegador de Internet e informe a seguinte URL: 
-Ao clicar em “Minhas Despesas” localizado no topo da página, contém o logo à esquerda e o nome ‘Minhas Despesas’ à direita do logo. 
+* Abra um navegador de Internet e informe a seguinte URL: 
+* Ao clicar em “Minhas Despesas” localizado no topo da página, contém o logo à esquerda e o nome ‘Minhas Despesas’ à direita do logo. 
 
 #### Responsável
 

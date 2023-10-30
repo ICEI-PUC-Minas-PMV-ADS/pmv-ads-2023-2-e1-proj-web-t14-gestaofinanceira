@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const password = document.getElementById('password').value;
 
     if (checkLogin(username, password)) {
-        window.location.href = '../temp.html';
+        window.location.href = '../user-profit-statement/user-profit-statement.html';
     } else {
         alert('Login falhou. Por favor verifique suas credenciais.');
     }

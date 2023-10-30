@@ -10,7 +10,7 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 #### Requisito atendido
 
-RF-01: Permiti o usuário cadastrar uma conta.
+* RF-01: Permiti o usuário cadastrar uma conta.
 
 
 #### Artefatos da funcionalidade
@@ -47,7 +47,7 @@ Luiz Gustavo
 
 #### Requisito atendido
 
-RF-01: Permiti que o usuário faça login de sua conta.
+* RF-01: Permiti que o usuário faça login de sua conta.
 
 
 #### Artefatos da funcionalidade
@@ -86,8 +86,8 @@ Miguel
 
 #### Requisito atendido
 
-RF-09: Permiti que o usuário nomeie suas despesas.
-RF-10: Capacidade de adionar, editar ou excluir despesas fixas e recorrentes. 
+* RF-09: Permiti que o usuário nomeie suas despesas.
+* RF-10: Capacidade de adionar, editar ou excluir despesas fixas e recorrentes. 
 
 
 #### Artefatos da funcionalidade

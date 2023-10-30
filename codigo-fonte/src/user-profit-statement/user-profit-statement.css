@@ -3,7 +3,7 @@
     padding: 0px 10px;
     overflow: auto;
     text-align: left;
-    background-color: #201b2c;
+    background-color: #201823;
     color: white;
     font-family: sans-serif;
 }
@@ -31,19 +31,11 @@ h1 {
     padding-top: 0px;
 }
 
-
-
-
-
-
-
-
 body {
     background-color: white;
     font-family: sans-serif;
     color: black;
     overflow: auto;
-
 
 }
 
@@ -52,36 +44,10 @@ body {
     height: 100px;
 }
 
-.navegacao {
-    padding: 0px 0px;
-    margin: auto 0px;
-    background-color: #201b2c;
-    color: white;
-}
-
-.boxtitulo {
-    display: flex;
-    justify-content: flex-start;
-
-}
-
 .boxnavegacao {
     display: flex;
     justify-content: flex-end;
     cursor: pointer;
-
-
-}
-
-.box1,
-.box2,
-.box3 {
-    width: 200px;
-    height: 50px;
-    border: 1px solid greenyellow;
-    color: white;
-    margin-bottom: 0px;
-    margin-top: 0px;
 
 }
 
@@ -96,7 +62,15 @@ body {
 .proximasDespesas,
 .mesatual,
 .Despesascard {
-    background-color: #201b2c;
+    background-color: #201823;
+    color: white;
+    width: 50%;
+    padding: 5px 5px;
+    margin: 10px;
+}
+
+.card   {
+    background-color:#201823;
     color: white;
     width: 50%;
     padding: 5px 5px;

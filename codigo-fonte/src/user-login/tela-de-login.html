@@ -1,0 +1,64 @@
+    <!--Página de Login-->
+<!DOCTYPE html>
+    <!--Língua do site (português do Brasil)-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Augusto da Silva Costa">    
+
+        <!--Arquivos css e javascript-->
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="functions" href="functions.js" as="script">
+
+        <!--Arquivo ico(com o icone) e o título da página-->
+    <link rel="shortcut icon" type="image/x-icon" href="iconeDaPagina_resized.ico">
+    <title>Faça seu Login - Economus</title>
+
+</head>
+<body>
+
+        <!--Parte esquerda da página(55%)-->
+    <section class="logo-parte-esquerda">
+
+        <!--imagem do logo com a mensagem "bem-vindo ao economus"-->
+
+        <img class="imagem-logo" src="logo-login.png">
+
+        <P class="bem-vindo"> Bem-Vindo ao Economus</P>
+
+        <!--rodapé e copyright-->
+
+        <footer>Copyright <span class="copyright">&#169;</span> 2023 - TODOS OS DIREITOS RESERVADOS</footer>
+
+    </section>
+
+        <!--Parte direita da página(45%)-->
+    <section class="login-parte-direita">
+
+        <p class="faca-login">Faça Login ou Cadastre-se</p>
+
+        <!--input e label de usuário, senha e submit-->
+
+        <form class="inputs-labels">
+            <label class="texto-usuario">Usuário</label>
+            <br>
+            <input class="input-usuario" type="text" placeholder="Usuário" id="username">
+            <br>
+            <label class="texto-senha">Senha</label>
+            <br>
+            <input class="input-senha" type="password" placeholder="Senha" id="password">
+            <p class="esqueci-senha">Esqueci a Senha</p>
+            <br><br>
+            <input class="input-entrar" type="submit" placeholder="Entrar" value="entrar">
+        </form>
+
+        <p class="cadastre">
+            <a href="../signup/cadastro.html">Cadastre-se</a>
+        </p>
+
+    </section>
+    <script type="module" src="login.js"></script>
+</body>
+</html>

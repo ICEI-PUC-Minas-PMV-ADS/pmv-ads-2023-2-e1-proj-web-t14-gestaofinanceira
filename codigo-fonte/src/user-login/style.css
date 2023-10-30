@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    background-color: #201B2C;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'open sans', sans-serif;
+
+}
+/*Primeira metade da página. 
+Aqui está a personalização da:
+-imagem
+-texto "bem-vindo"
+-texto do footer(rodapé)*/
+
+.logo-parte-esquerda {
+    position: absolute;
+    display: flex;
+    left: 0;
+    width: 55%;
+    height: 742px;
+
+}
+.imagem-logo {
+    width: 100%;
+    height: auto;
+    object-fit:contain;
+}
+.bem-vindo {
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    top: 0;
+    width: 100%;
+
+}
+.copyright {
+    content: '\\00A9';
+
+}
+footer {
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    font-size: 10px;
+    bottom: 0;
+    width: 100%;
+
+}
+/*Segunda metade da página*/
+
+.login-parte-direita {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        height: 742px;
+        width: 45%;
+
+}
+.faca-login {
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    top: 0;
+
+}
+.login-parte-direita form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 150px;
+}
+.login-parte-direita label {
+    color: #ffffff;
+
+}
+.login-parte-direita input {
+    font-size: 20px;
+    background-color: #514069;
+    border-color: #000000;
+    border-radius: 5px;
+    height: 50px;
+    width: 400px;
+
+}
+.input-entrar{
+    color: #ffffff;
+}
+.input-entrar:hover {
+    background-color: #6495ED;
+    cursor: pointer;
+
+}
+.esqueci-senha{
+    position: absolute;
+    bottom: 50px;
+    color: #ffffff;
+}
+.esqueci-senha:hover{
+    color: #ff0000;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.cadastre{
+    position:absolute;
+    bottom: 0;
+    color: #ffffff;
+}
+.cadastre:hover{
+    color: #6495ED;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}

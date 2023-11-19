@@ -1,64 +1,68 @@
-    <!--Página de Login-->
 <!DOCTYPE html>
-    <!--Língua do site (português do Brasil)-->
+
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Miguel Augusto da Silva Costa">    
-
-        <!--Arquivos css e javascript-->
     
     <link rel="stylesheet" href="style.css">
-    <link rel="functions" href="functions.js" as="script">
-
-        <!--Arquivo ico(com o icone) e o título da página-->
-    <link rel="shortcut icon" type="image/x-icon" href="iconeDaPagina_resized.ico">
+    <script defer src="login.js"></script>
+        
+    <link rel="shortcut icon" type="imagex/png" href="icone-da-pagina_resized.ico">
     <title>Faça seu Login - Economus</title>
 
 </head>
 <body>
 
-        <!--Parte esquerda da página(55%)-->
-    <section class="logo-parte-esquerda">
+    <div id="body">
 
-        <!--imagem do logo com a mensagem "bem-vindo ao economus"-->
+        <section class="logo-parte-esquerda">
 
-        <img class="imagem-logo" src="logo-login.png">
+            <img class="imagem-logo" src="logo-login.png">
 
-        <P class="bem-vindo"> Bem-Vindo ao Economus</P>
+            <P class="bem-vindo"> Bem-Vindo ao Economus</P>
 
-        <!--rodapé e copyright-->
+            <footer>Copyright <span class="copyright">&#169;</span> 2023 - TODOS OS DIREITOS RESERVADOS</footer>
 
-        <footer>Copyright <span class="copyright">&#169;</span> 2023 - TODOS OS DIREITOS RESERVADOS</footer>
+        </section>
 
-    </section>
+        <section class="login-parte-direita">
 
-        <!--Parte direita da página(45%)-->
-    <section class="login-parte-direita">
+            <p class="faca-login">Faça Login ou Cadastre-se</p>
 
-        <p class="faca-login">Faça Login ou Cadastre-se</p>
+            <form class="inputs-labels">
+                <label class="text-usuario">Usuário</label>
+                <br>
+                <input class="username" type="text" placeholder="Insira seu E-mail" required>
+                <br>
+                <label class="text-senha">Senha</label>
+                <br>
+                <input class="password" type="password" placeholder="Insira sua Senha" required>
+                <a href="javascript: abrir();"><p class="esqueci-senha">Esqueci a Senha</p></a>
+                <br><br><br>
+                <input class="input-entrar" type="submit" value="Entrar">
+            </form>
 
-        <!--input e label de usuário, senha e submit-->
+                <a class="cadastre" href="../cadastro_Economus/cadastro.html">Cadastre-se</a>
 
-        <form class="inputs-labels">
-            <label class="texto-usuario">Usuário</label>
-            <br>
-            <input class="input-usuario" type="text" placeholder="Usuário" id="username">
-            <br>
-            <label class="texto-senha">Senha</label>
-            <br>
-            <input class="input-senha" type="password" placeholder="Senha" id="password">
-            <p class="esqueci-senha">Esqueci a Senha</p>
-            <br><br>
-            <input class="input-entrar" type="submit" placeholder="Entrar" value="entrar">
-        </form>
+        </section>
 
-        <p class="cadastre">
-            <a href="../signup/cadastro.html">Cadastre-se</a>
-        </p>
+    </div>
 
-    </section>
-    <script type="module" src="login.js"></script>
+    <form id="pop-up-esqueci-senha" class="pop-up-esqueci-senha">
+
+        <label class="text-insira">Insira seu E-mail de Recuperação</label>
+        <br>
+        <input id="input-email" class="input-email" type="email" placeholder="E-mail cadastrado" required>
+        <br>
+        <br>
+        <label class="text-link">Você irá receber um link para redefinir sua senha no E-mail cadastro</label>
+        <br>
+        <a href="javascript: fechar();"><input id="input-cancelar" class="input-cancelar" type="submit" value="CANCELAR"></a>
+        <a href="javascript: fechar();"><input id="input-enviar" class="input-enviar" type="submit" value="ENVIAR"></a>
+    
+    </form>
+
 </body>
 </html>

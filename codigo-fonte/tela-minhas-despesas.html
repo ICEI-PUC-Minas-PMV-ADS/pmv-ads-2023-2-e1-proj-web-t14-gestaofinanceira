@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-minhas-despesas.css">
+    <script defer src="minhas-despesas.js"></script>
+
+    <link rel="shortcut icon" type="imagex/png" href="icone-da-pagina_resized.ico">
+    <title>Minhas Despesas - Economus</title>
+
+</head>
+<body>
+
+    <div  id="body">
+    
+        <section class="cabecalho">
+
+            <img class="logo-cabecalho" src="logo-login.png">
+
+            <p class="text-minhas-despesas">Minhas Despesas</p>
+
+            <a href="tela-minhas-receitas.html"><p class="text-minhas-receitas">Minhas Receitas</p></a>
+
+            <p class="text-minhas-metas">Minhas Metas</p>
+
+            <a href="tela-meu-perfil.html"><p class="text-meu-perfil">Meu Perfil</p></a>
+
+        </section>
+
+        <div class="subtitulo-despesas">
+
+            <p>Aqui você pode colocar as despesas que teve durante este Mês, atualize 
+            sempre que necessário para manter o seu controle de despesas em dia</p>
+
+        </div>
+
+        <div class="categoria-despesa">
+
+            <p class="text-divs-despesas">Despesa por Categoria</p>
+
+            <p class="text-total">TOTAL</p>
+
+        </div>
+
+        <div class="proximas-despesas">
+
+            <p class="text-divs-despesas">Próximas Despesas</p>
+            
+        </div>
+
+        <div class="lista-contas">
+
+            <p class="text-contas">Contas</p>
+
+            <a href="javascript: abrirPopUpDespesas();"><img class="imagem-adicionar" src="library_add_FILL0_wght400_GRAD0_opsz24.png"></a>
+        
+        </div>
+
+        <div class="distribuicao-despesas">
+
+            <p class="text-mes-despesas">Novembro</p>
+        
+            <p class="text-variaveis-despesas">Variáveis</p>
+            <p class="text-fixas-despesas">Fixas</p>
+        
+            <img class="imagem-variaveis" src="monitoring_FILL0_wght400_GRAD0_opsz24.png">
+            <img class="imagem-fixas" src="office-push-pin.png">
+        
+        </div>
+
+        <section class="rodape">
+        
+            <footer><p>Copyright<span class="copyright">&#169;</span> 2023 - todos os direitos reservados</p></footer>
+    
+        </section>
+            
+
+    </div>
+
+    <div id="pop-up-lista-despesas" class="pop-up-lista-despesas">
+
+        <img class="imagem-adicionar-despesas" src="add_FILL0_wght400_GRAD0_opsz24.png">
+        <img class="imagem-editar-despesas" src="edit_FILL0_wght400_GRAD0_opsz24.png">
+
+        <a href="javascript: fecharPopUpDespesas();"><input id="botao-cancelar-despesas" class="botao-cancelar-despesas" type="submit" value="Cancelar"></input></a>
+        <a href="javascript: fecharPopUpDespesas();"><input id="botao-salvar-despesas" class="botao-salvar-despesas" type="submit" value="Salvar"></input></a>
+
+    </div>
+
+</body>
+</html>

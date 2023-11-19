@@ -6,90 +6,87 @@
     <meta name=" " viewport" content="width = device-width, initial-scale=1.0">
     <link rel="stylesheet" href="user-profit-statement.css">
     <script src="user-profit-statement.js"></script>
-    <title> Economus-Minhas Despesas </title>
-</head>
+   <link rel="shortcut icon" type="imagex/png" href="icone-da-pagina_resized.ico">
+    <title>Minhas Receitas - Economus</title>
 
+</head>
 <body>
 
-    <div class="secao">
+    <div  id="body">
+    
+        <section class="cabecalho">
 
-        <img class="economus" src="img/logo-economus.png">
-        <h1>Minhas Despesas</h1>
+            <img class="logo-cabecalho" src="logo-login.png">
 
-        <p class="navegacaoPrincipal">
-            <a href="#receitas">Minhas Receitas</a>
-            <a href="#metas">Minhas Metas</a>
-            <a href="#perfil">Meu Perfil</a>
-        </p>
+            <p class="text-minhas-receitas">Minhas Receitas</p>
 
+            <a href="../minhas-despesas_Economus/tela-minhas-despesas.html"><p class="text-minhas-despesas">Minhas Despesas</p></a>
 
-    </div>
+            <p class="text-minhas-metas">Minhas Metas</p>
 
-    <div class="subtitulo">
-        <p> Aqui você pode colocar todas as despesas que teve durante do mês!<br>
-            Atualize sempre que necessário para manter o seu controle de despesas em dia </p>
+            <a href="../meu-perfil_Economus/tela-meu-perfil.html"><p class="text-meu-perfil">Meu Perfil</p></a>
 
-    </div>
+        </section>
 
-    <div class="despesasCategoria">
-        <h2> Despesas por Categoria</h2>
+        <div class="subtitulo-receitas">
 
-        <table>
-            <tr>
-                <td>Casa</td>
-                <td>R$ 700,00</td>
-            </tr>
+            <p>Aqui você pode colocar as receitas que teve durante este Mês, atualize 
+            sempre que necessário para manter o seu controle de receitas em dia</p>
 
-            <tr>
-                <td>Educação</td>
-                <td>R$ 565,00</td>
-            </tr>
+        </div>
 
-            <tr>
-                <td>Alimentação</td>
-                <td>R$ 300,00</td>
-            </tr>
+        <div class="categoria-receitas">
 
-            <tr>
-                <td>Lazer</td>
-                <td>R$ 200,00</td>
-            </tr>
+            <p class="text-divs-receitas">Receitas por Categoria</p>
 
-        </table>
+            <p class="text-total">TOTAL</p>
 
-    </div>
+        </div>
 
-    <div class="proximasDespesas">
-        <h2> Próximas Despesas</h2>
+        <div class="proximas-receitas">
 
-        <table>
-            <tr>
-                <td>Mensalidade da Faculdade</td>
-                <td>- 01/10/2023</td>
-            </tr>
+            <p class="text-divs-receitas">Próximas Receitas</p>
+            
+        </div>
 
-            <tr>
-                <td>Aluguel</td>
-                <td>- 05/10/2023</td>
-            </tr>
+        <div class="lista-contas">
 
-            <tr>
-                <td>Streaming</td>
-                <td>- 10/10/2023</td>
-            </tr>
+            <p class="text-contas">Contas</p>
 
+            <a href="javascript: abrirPopUpReceitas();"><img class="imagem-adicionar" src="library_add_FILL0_wght400_GRAD0_opsz24.png"></a>
+        
+        </div>
 
-        </table>
+        <div class="distribuicao-receitas">
+
+            <p class="text-mes-receitas">Novembro</p>
+        
+            <p class="text-variaveis-receitas">Variáveis</p>
+            <p class="text-fixas-receitas">Fixas</p>
+        
+            <img class="imagem-variaveis" src="monitoring_FILL0_wght400_GRAD0_opsz24.png">
+            <img class="imagem-fixas" src="office-push-pin.png">
+        
+        </div>
+
+        <section class="rodape">
+        
+            <footer><p>Copyright<span class="copyright">&#169;</span> 2023 - todos os direitos reservados</p></footer>
+        
+        </section>
 
     </div>
 
-    <div class="mesatual">
-        <h2> Outubro </h2>
-        <h3> Variáveis </h3>
-        <h3> Fixas </h3>
-    </div>
+    <div id="pop-up-lista-receitas" class="pop-up-lista-receitas">
 
-    <!-- Aqui começa o card de adicionar a lista de despesas -->
+        <img class="imagem-adicionar-receitas" src="add_FILL0_wght400_GRAD0_opsz24.png">
+        <img class="imagem-editar-receitas" src="edit_FILL0_wght400_GRAD0_opsz24.png">
+
+        <a href="javascript: fecharPopUpReceitas();"><input id="botao-cancelar-receitas" class="botao-cancelar-receitas" type="submit" value="Cancelar"></input></a>
+        <a href="javascript: fecharPopUpReceitas();"><input id="botao-salvar-receitas" class="botao-salvar-receitas" type="submit" value="Salvar"></input></a>
+
+    </div>
+  
 
     <main>
 

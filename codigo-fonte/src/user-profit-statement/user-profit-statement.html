@@ -2,12 +2,15 @@
 <html>
 
 <head>
+    <title>Receitas - Economus</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="images/icone-da-pagina_resized.ico">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="crud-user-profit-statement.js"></script>
+    <script defer src="user-profit-statement-att.js"></script>
     <link rel="stylesheet" href="user-profit-statement.css">
-    <script src="user-profit-statement.js"></script>
-   <link rel="shortcut icon" type="imagex/png" href="icone-da-pagina_resized.ico">
-    <title>Minhas Receitas - Economus</title>
+
 
 </head>
 <body>
@@ -16,7 +19,7 @@
     
         <section class="cabecalho">
 
-            <img class="logo-cabecalho" src="logo-login.png">
+            <img class="logo-cabecalho" src="images/logo-login.png">
 
             <p class="text-minhas-receitas">Minhas Receitas</p>
 
@@ -39,6 +42,11 @@
 
             <p class="text-divs-receitas">Receitas por Categoria</p>
 
+            <div id="areaGrafico">
+              
+              <canvas id="grafico"></canvas>
+            </div>
+
             <p class="text-total">TOTAL</p>
 
         </div>
@@ -53,7 +61,31 @@
 
             <p class="text-contas">Contas</p>
 
-            <a href="javascript: abrirPopUpReceitas();"><img class="imagem-adicionar" src="library_add_FILL0_wght400_GRAD0_opsz24.png"></a>
+            <table>
+              <thead>
+                <tr>
+                  <th class="selecao"></th>
+                  <th id="th1" class="col1">Descrição</th>
+                  <th id="th2" class="col2">Valor</th>
+                  <th id="th3" class="col3">Tipo</th>
+                  <th id="th4" class="col4">Data</th>
+                </tr>
+              </thead>
+              <tbody id="corpoTabela"></tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="4">
+                    <button id="btAdicionar" class="botao">Adicionar</button>
+                    <button id="btEditar" class="botao">Editar</button>
+                    <button id="btExcluir" class="botao">Excluir</button>
+                  </td>
+                </tr>
+              </tfoot>
+           </table>
+
+            
+
+            <a href="javascript: abrirPopUpReceitas();"><img class="imagem-adicionar" src="images/library_add_FILL0_wght400_GRAD0_opsz24.png"></a>
         
         </div>
 
@@ -64,8 +96,8 @@
             <p class="text-variaveis-receitas">Variáveis</p>
             <p class="text-fixas-receitas">Fixas</p>
         
-            <img class="imagem-variaveis" src="monitoring_FILL0_wght400_GRAD0_opsz24.png">
-            <img class="imagem-fixas" src="office-push-pin.png">
+            <img class="imagem-variaveis" src="images/monitoring_FILL0_wght400_GRAD0_opsz24.png">
+            <img class="imagem-fixas" src="images/office-push-pin.png">
         
         </div>
 
@@ -79,8 +111,8 @@
 
     <div id="pop-up-lista-receitas" class="pop-up-lista-receitas">
 
-        <img class="imagem-adicionar-receitas" src="add_FILL0_wght400_GRAD0_opsz24.png">
-        <img class="imagem-editar-receitas" src="edit_FILL0_wght400_GRAD0_opsz24.png">
+        <img class="imagem-adicionar-receitas" src="images/add_FILL0_wght400_GRAD0_opsz24.png">
+        <img class="imagem-editar-receitas" src="images/edit_FILL0_wght400_GRAD0_opsz24.png">
 
         <a href="javascript: fecharPopUpReceitas();"><input id="botao-cancelar-receitas" class="botao-cancelar-receitas" type="submit" value="Cancelar"></input></a>
         <a href="javascript: fecharPopUpReceitas();"><input id="botao-salvar-receitas" class="botao-salvar-receitas" type="submit" value="Salvar"></input></a>
@@ -90,45 +122,53 @@
 
     <main>
 
-        <div class="Despesascard">
-            <h2> Despesas </h2>
-        </div>    
+        <div id="areaFiltro">
+            <label for="filtro">Busca: </label>
+            <input id="filtro" type="text" />
+            <span id="limpaFiltro">&times;</span>
+        </div>
 
-        <script>
-            const receita = new Receita();
-        </script>
 
-        <div class="card">
-            <div class="inputreceita">
-                <label>Tipo:</label>
-                <input type="text" id="receita" placeholder="Tipo de Receita">
+          
         
+          <div id="boxReceita" class="box">
+            <div class="corpoBox">
+              <header>
+                <span id="fechaBox">&times;</span>
+                <h3>RECEITAS</h3>
+              </header>
+              <p>
+                <label for="campoDescricao">Descrição: </label>
+                <input type="text" id="campoDescricao" />
+                <input type="hidden" id="campoID" />
+              </p>
+        
+              <p>
+                <label for="campoValor">Valor: </label>
+                <input type="number" id="campoValor" />
+              </p>
+        
+              <p>
+                <label for="campoTipo">Tipo: </label>
+                <select id="campoTipo">
+                  <option value="1">Fixa</option>
+                  <option value="2">Variável</option>
+                </select>
+              </p>
+        
+              <p>
+                <label for="campoData">Data: </label>
+                <input type="date" id="campoData" />
+              </p>
+        
+              <p>
+                <button id="btMTSalvar">Salvar</button>
+                <button id="btMTAlterar">Alterar</button>
+                <button id="btMTExcluir">Excluir</button>
+                <button id="btMTCancelar">Cancelar</button>
+              </p>
             </div>
-        </div>
-
-            <div class="inputvalor">
-                <label>Valor: </label>
-                <input type="number" id="valor" placeholder="Valor de Receita">
-            </div>
-
-                <button onclick="receita.salvar()">Salvar</button> 
-                <button onclick="receita.cancelar()">Cancelar</button>
-                
-        </div>
-
-        <div class="tabelaresultado">
-            <table border="1">
-                <thead>
-                    <th class="center">ID</th>
-                    <th>Receita</th>
-                    <th>Valor</th>
-                    <th class="center">Ações</th>
-                </thead>
-                <tbody id="tbody" </table>
-
-                </tbody>
-            </table>          
-        </div>
+          </div>
 
     </main>
 

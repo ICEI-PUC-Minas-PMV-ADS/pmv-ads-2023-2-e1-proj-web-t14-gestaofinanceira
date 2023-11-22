@@ -99,13 +99,3 @@ listaTabela() {
         
     }
 }
-function abrirPopUpReceitas(){
-    document.getElementById('pop-up-lista-receitas').style.display = 'flex';
-    document.getElementById('body').style.filter = 'blur(25px)';
-
-}
-function fecharPopUpReceitas(){
-    document.getElementById('pop-up-lista-receitas').style.display = 'none';
-    document.getElementById('body').style.filter = 'none';
-
-}

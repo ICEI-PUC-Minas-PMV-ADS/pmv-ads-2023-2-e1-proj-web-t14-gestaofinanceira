@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
     background-color: #F0FFFF;
     margin: 0;
@@ -7,37 +7,43 @@ body{
     width: 1488px;
 
 }
-#body{
+
+#body {
     filter: none;
 
 }
-.cabecalho{
+
+.cabecalho {
     display: flex;
     background-color: #201B2C;
     height: 110px;
     width: 1488px;
 
 }
-.logo-cabecalho{
+
+.logo-cabecalho {
     position: relative;
     height: 110px;
     width: 125px;
     transition: background-color 0.8s ease;
 
 }
-.logo-cabecalho:hover{
+
+.logo-cabecalho:hover {
     background-color: #6495ED;
     cursor: pointer;
 
 }
-.text-minhas-despesas{
+
+.text-minhas-despesas {
     position: absolute;
     color: #F0FFFF;
     left: 180px;
     font-size: 40px;
 
 }
-.text-minhas-receitas{
+
+.text-minhas-despesas {
     position: absolute;
     left: 880px;
     top: 50px;
@@ -45,13 +51,15 @@ body{
     font-size: 25px;
 
 }
-.text-minhas-receitas:hover{
+
+.text-minhas-despesas:hover {
     color: #00FF7F;
     text-decoration: underline;
     cursor: pointer;
 
 }
-.text-minhas-metas{
+
+.text-minhas-metas {
     position: absolute;
     left: 1120px;
     top: 50px;
@@ -59,13 +67,15 @@ body{
     font-size: 25px;
 
 }
-.text-minhas-metas:hover{
+
+.text-minhas-metas:hover {
     color: #FFD700;
     text-decoration: underline;
     cursor: pointer;
 
 }
-.text-meu-perfil{
+
+.text-meu-perfil {
     position: absolute;
     left: 1330px;
     top: 50px;
@@ -73,13 +83,15 @@ body{
     font-size: 25px;
 
 }
-.text-meu-perfil:hover{
+
+.text-meu-perfil:hover {
     color: #6495ED;
     text-decoration: underline;
     cursor: pointer;
 
 }
-.subtitulo-despesas{
+
+.subtitulo-despesas {
     position: absolute;
     background-color: #6495ED;
     border-radius: 8px;
@@ -90,7 +102,8 @@ body{
     font-size: 20px;
 
 }
-.categoria-despesa{
+
+.categoria-despesa {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -104,12 +117,14 @@ body{
     color: #ffffff;
 
 }
-.text-categoria-despesa{
+
+.text-categoria-despesa {
     position: absolute;
     left: 30px;
     font-weight: bold
 }
-.imagem-adicionar{
+
+.imagem-adicionar {
     position: absolute;
     right: 5px;
     bottom: 5px;
@@ -117,13 +132,15 @@ body{
     width: 30px;
 
 }
-.text-total{
+
+.text-total {
     position: absolute;
     font-size: 25px;
     right: 170PX;
 
 }
-.proximas-despesas{
+
+.proximas-despesas {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -137,12 +154,14 @@ body{
     color: #F0FFFF;
 
 }
-.text-divs-despesas{
+
+.text-divs-despesas {
     position: absolute;
     left: 20px;
 
 }
-.lista-contas{
+
+.lista-contas {
     position: absolute;
     background-color: #201B2C;
     top: 290px;
@@ -153,12 +172,14 @@ body{
     text-align: center;
 
 }
-.text-contas{
+
+.text-contas {
     font-size: 20px;
     color: #F0FFFF;
 
 }
-.pop-up-lista-despesas{
+
+.pop-up-lista-despesas {
     color: #F0FFFF;
     display: none;
     position: fixed;
@@ -175,7 +196,8 @@ body{
     font-size: 25px;
 
 }
-.imagem-adicionar-despesas{
+
+.imagem-adicionar-despesas {
     position: absolute;
     left: 20px;
     bottom: 20px;
@@ -183,11 +205,13 @@ body{
     width: 45px;
 
 }
-.imagem-adicionar-despesas:hover{
+
+.imagem-adicionar-despesas:hover {
     cursor: pointer;
 
 }
-.imagem-editar-despesas{
+
+.imagem-editar-despesas {
     position: absolute;
     left: 80px;
     bottom: 20px;
@@ -195,11 +219,13 @@ body{
     width: 40px;
 
 }
-.imagem-editar-despesas:hover{
+
+.imagem-editar-despesas:hover {
     cursor: pointer;
 
 }
-.botao-cancelar-despesas{
+
+.botao-cancelar-despesas {
     position: absolute;
     border-radius: 6px;
     background-color: #B22222;
@@ -210,13 +236,15 @@ body{
     right: 170px;
 
 }
-.botao-cancelar-despesas:hover{
+
+.botao-cancelar-despesas:hover {
     background-color: #6495ED;
     cursor: pointer;
-    
+
 
 }
-.botao-salvar-despesas{
+
+.botao-salvar-despesas {
     position: absolute;
     border-radius: 6px;
     background-color: #00FF7F;
@@ -227,13 +255,15 @@ body{
     width: 100px;
 
 }
-.botao-salvar-despesas:hover{
+
+.botao-salvar-despesas:hover {
     background-color: #6495ED;
     cursor: pointer;
-    
+
 
 }
-.distribuicao-despesas{
+
+.distribuicao-despesas {
     position: absolute;
     text-align: center;
     top: 120px;
@@ -245,7 +275,8 @@ body{
     color: #F0FFFF;
 
 }
-.imagem-variaveis{
+
+.imagem-variaveis {
     position: absolute;
     top: 35px;
     width: 40px;
@@ -253,7 +284,8 @@ body{
     left: 80px;
 
 }
-.imagem-fixas{
+
+.imagem-fixas {
     position: absolute;
     top: 35px;
     width: 40px;
@@ -261,28 +293,33 @@ body{
     right: 70px;
 
 }
-.mes-despesas{
+
+.mes-despesas {
     font-size: 20px;
     margin-top: 5px;
 
 }
-.text-variaveis-despesas{
+
+.text-variaveis-despesas {
     position: absolute;
     top: 65px;
     left: 70px;
 
 }
-.text-fixas-despesas{
+
+.text-fixas-despesas {
     position: absolute;
     top: 65px;
     right: 70px;
 
 }
-.copyright{
+
+.copyright {
     content: '\\00A9';
 
 }
-.rodape{
+
+.rodape {
     display: flex;
     position: absolute;
     text-align: center;
@@ -294,4 +331,32 @@ body{
     width: 1488px;
     height: 40px;
 
+}
+
+.corpoBox header {
+    margin-top: 0;
+}
+
+.corpoBox {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 10px 20px;
+    border: 1px solid #888;
+    width: 25rem;
+    min-width: 25rem;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animacao;
+    animation-duration: 1s
+}
+
+#areaGrafico {
+    max-width: 450px;
+    margin: 0 auto;
+    height: 200px;
+}
+
+#areaGrafico h3 {
+    margin-top: 2em;
+    margin-bottom: 0;
 }

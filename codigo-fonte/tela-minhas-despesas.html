@@ -1,43 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-minhas-despesas.css">
-    <script defer src="minhas-despesas.js"></script>
+<html>
 
-    <link rel="shortcut icon" type="imagex/png" href="icone-da-pagina_resized.ico">
-    <title>Minhas Despesas - Economus</title>
+<head>
+    <title>Despesas - Economus</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="images/icone-da-pagina_resized.ico">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="user-loss-statement-crud.js"></script>
+    <script defer src="user-loss-statement.js"></script>
+    <link rel="stylesheet" href="user-loss-statement.css">
+
 
 </head>
+
 <body>
 
-    <div  id="body">
-    
+    <div id="body">
+
         <section class="cabecalho">
 
-            <img class="logo-cabecalho" src="logo-login.png">
+            <img class="logo-cabecalho" src="images/logo-login.png">
 
             <p class="text-minhas-despesas">Minhas Despesas</p>
 
-            <a href="tela-minhas-receitas.html"><p class="text-minhas-receitas">Minhas Receitas</p></a>
+            <a href="../minhas-despesas_Economus/tela-minhas-despesas.html">
+                <p class="text-minhas-despesas">Minhas Despesas</p>
+            </a>
 
             <p class="text-minhas-metas">Minhas Metas</p>
 
-            <a href="tela-meu-perfil.html"><p class="text-meu-perfil">Meu Perfil</p></a>
+            <a href="../meu-perfil_Economus/tela-meu-perfil.html">
+                <p class="text-meu-perfil">Meu Perfil</p>
+            </a>
 
         </section>
 
         <div class="subtitulo-despesas">
 
-            <p>Aqui você pode colocar as despesas que teve durante este Mês, atualize 
-            sempre que necessário para manter o seu controle de despesas em dia</p>
+            <!--<p>Aqui você pode colocar as despesas que teve durante este Mês, atualize 
+            sempre que necessário para manter o seu controle de despesas em dia</p>-->
 
         </div>
 
-        <div class="categoria-despesa">
+        <div class="categoria-despesas">
 
-            <p class="text-divs-despesas">Despesa por Categoria</p>
+            <p class="text-divs-despesas">Despesas por Categoria</p>
+
+            <div id="areaGrafico">
+
+                <canvas id="grafico"></canvas>
+            </div>
 
             <p class="text-total">TOTAL</p>
 
@@ -46,47 +59,132 @@
         <div class="proximas-despesas">
 
             <p class="text-divs-despesas">Próximas Despesas</p>
-            
+
         </div>
 
         <div class="lista-contas">
 
             <p class="text-contas">Contas</p>
 
-            <a href="javascript: abrirPopUpDespesas();"><img class="imagem-adicionar" src="library_add_FILL0_wght400_GRAD0_opsz24.png"></a>
-        
+            <table>
+                <thead>
+                    <tr>
+                        <th class="selecao"></th>
+                        <th id="th1" class="col1">Descrição</th>
+                        <th id="th2" class="col2">Categoria</th>
+                        <th id="th3" class="col3">Valor</th>
+                        <th id="th4" class="col4">Data</th>
+                    </tr>
+                </thead>
+                <tbody id="corpoTabela"></tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">
+                            <button id="btAdicionar" class="botao">Adicionar</button>
+                            <button id="btEditar" class="botao">Editar</button>
+                            <button id="btExcluir" class="botao">Excluir</button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+
+
+            <a href="javascript: abrirPopUpdespesas();"><img class="imagem-adicionar"
+                    src="images/library_add_FILL0_wght400_GRAD0_opsz24.png"></a>
+
         </div>
 
         <div class="distribuicao-despesas">
 
             <p class="text-mes-despesas">Novembro</p>
-        
+
             <p class="text-variaveis-despesas">Variáveis</p>
             <p class="text-fixas-despesas">Fixas</p>
-        
-            <img class="imagem-variaveis" src="monitoring_FILL0_wght400_GRAD0_opsz24.png">
-            <img class="imagem-fixas" src="office-push-pin.png">
-        
+
+            <img class="imagem-variaveis" src="images/monitoring_FILL0_wght400_GRAD0_opsz24.png">
+            <img class="imagem-fixas" src="images/office-push-pin.png">
+
         </div>
 
         <section class="rodape">
-        
-            <footer><p>Copyright<span class="copyright">&#169;</span> 2023 - todos os direitos reservados</p></footer>
-    
+
+            <footer>
+                <p>Copyright<span class="copyright">&#169;</span> 2023 - todos os direitos reservados</p>
+            </footer>
+
         </section>
-            
 
     </div>
 
     <div id="pop-up-lista-despesas" class="pop-up-lista-despesas">
 
-        <img class="imagem-adicionar-despesas" src="add_FILL0_wght400_GRAD0_opsz24.png">
-        <img class="imagem-editar-despesas" src="edit_FILL0_wght400_GRAD0_opsz24.png">
+        <img class="imagem-adicionar-despesas" src="images/add_FILL0_wght400_GRAD0_opsz24.png">
+        <img class="imagem-editar-despesas" src="images/edit_FILL0_wght400_GRAD0_opsz24.png">
 
-        <a href="javascript: fecharPopUpDespesas();"><input id="botao-cancelar-despesas" class="botao-cancelar-despesas" type="submit" value="Cancelar"></input></a>
-        <a href="javascript: fecharPopUpDespesas();"><input id="botao-salvar-despesas" class="botao-salvar-despesas" type="submit" value="Salvar"></input></a>
+        <a href="javascript: fecharPopUpdespesas();"><input id="botao-cancelar-despesas" class="botao-cancelar-despesas"
+                type="submit" value="Cancelar"></input></a>
+        <a href="javascript: fecharPopUpdespesas();"><input id="botao-salvar-despesas" class="botao-salvar-despesas"
+                type="submit" value="Salvar"></input></a>
 
     </div>
 
+
+    <main>
+
+        <div id="areaFiltro">
+            <label for="filtro">Busca: </label>
+            <input id="filtro" type="text" />
+            <span id="limpaFiltro">&times;</span>
+        </div>
+
+
+
+
+        <div id="boxDespesa" class="box">
+            <div class="corpoBox">
+                <header>
+                    <span id="fechaBox">&times;</span>
+                    <h3>Despesas</h3>
+                </header>
+                <p>
+                    <label for="campoDescricao">Descrição: </label>
+                    <input type="text" id="campoDescricao" />
+                    <input type="hidden" id="campoID" />
+                </p>
+                <p>
+                    <label for="campoCategoria">Categoria: </label>
+                    <select id="campoCategoria">
+                        <option value="1">Alimentação</option>
+                        <option value="2">Contas</option>
+                        <option value="3">Educação</option>
+                        <option value="4">Emergência</option>
+                        <option value="5">Lazer</option>
+                        <option value="6">Investimentos</option>
+                        <option value="7">Saúde</option>
+                        <option value="8">Outros</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="campoValor">Valor: </label>
+                    <input type="number" id="campoValor" />
+                </p>
+                <p>
+                    <label for="campoData">Data: </label>
+                    <input type="date" id="campoData" />
+                </p>
+
+                <p>
+                    <button id="btMTSalvar">Salvar</button>
+                    <button id="btMTAlterar">Alterar</button>
+                    <button id="btMTExcluir">Excluir</button>
+                    <button id="btMTCancelar">Cancelar</button>
+                </p>
+            </div>
+        </div>
+
+    </main>
+
 </body>
+
 </html>

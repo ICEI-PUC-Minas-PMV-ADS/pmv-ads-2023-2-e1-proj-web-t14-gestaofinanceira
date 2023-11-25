@@ -72,7 +72,7 @@ function mostraTabela() {
 
     // atualiza gráfico de despesas por tipo
     dadosGrafico = [0, 0, 0, 0, 0, 0, 0, 0];
-    dados.forEach((t) => dadosGrafico[t.categoria - 1]++);
+    dados.forEach((t) => (dadosGrafico[t.categoria - 1] += parseFloat(t.valor)));
     chart.data.datasets[0].data = dadosGrafico;
     chart.update();
 }

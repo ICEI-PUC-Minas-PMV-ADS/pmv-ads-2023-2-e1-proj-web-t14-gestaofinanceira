@@ -32,17 +32,18 @@ nav.header-nav img {
 }
 
 nav.header-nav h1 {
-    font-size: 3em;
+    font-size: 2em;
     text-transform: uppercase;
     color: #fffafa;
     text-shadow: 2px 2px 2px #38373d;
 }
 
 nav.header-nav h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     text-transform: capitalize;
     color: #fffafa;
     text-shadow: 1px 1px 0px #38373d;
+    padding-top: 1em;
 }
 
 nav.header-nav li.usr-profile {
@@ -65,6 +66,47 @@ nav.header-nav li a {
     display: block;
 }
 
+section {
+    background-color: #fffafa;
+    height: 0 auto;
+}
+
+section.balance-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 0.5em;
+}
+
+.balance-values {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.balance-box {
+    flex: 1;
+    padding: 1em;
+}
+
+.balance-box p {
+    margin: 0;
+    font-size: 2em;
+    padding: 1em;
+    color: #fff;
+    border: 2px solid #201823;
+    border-bottom: 0.1em solid #01ffff;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #38373d;
+}
+
+#profitValue,
+#lossValue {
+    font-weight: bold;
+    color: gold;
+}
+
 .home-footer {
     color: #fffafa;
 }
@@ -79,7 +121,6 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
-
 
     .header-nav {
         flex-wrap: wrap;
@@ -108,5 +149,25 @@ a:hover {
     nav.header-nav li.usr-profile {
         margin: 1.25em;
         white-space: nowrap;
+    }
+
+
+    .balance-values{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #profitValue,
+    #lossValue {
+        flex: 1;
+        width: 100%;
+        margin: 1em 0;
+        white-space: nowrap;
+    }
+
+    .balance-box p {
+        margin: 0.325em 0;
+        font-size: 1.5em;
+        border-bottom: 2px solid #01ffff;
     }
 }

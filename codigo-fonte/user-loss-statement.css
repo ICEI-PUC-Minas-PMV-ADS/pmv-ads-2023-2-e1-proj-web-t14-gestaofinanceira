@@ -103,7 +103,7 @@ body {
 
 }
 
-.categoria-despesa {
+.categoria-despesas {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -351,9 +351,9 @@ body {
 }
 
 #areaGrafico {
-    max-width: 450px;
+    max-width: 850px;
     margin: 0 auto;
-    height: 200px;
+    height: 350px;
 }
 
 #areaGrafico h3 {

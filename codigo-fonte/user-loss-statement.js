@@ -1,61 +1,92 @@
 let dadosGrafico = [0, 0, 0, 0, 0, 0, 0, 0];
-let seriesGrafico = {
-    labels: ["Alimentação", "Contas", "Educação", "Emergência", "Lazer", "Investimentos", "Saúde", "Outros"],
-    datasets: [
-        {
-            label: "Despesas",
-            data: dadosGrafico,
-            borderWidth: 1,
-        },
-    ],
-};
+
 let chart = new Chart(grafico, {
     type: "doughnut",
-    data: seriesGrafico,
+    data: {
+        labels: ["Alimentação", "Contas", "Educação", "Emergência", "Lazer", "Investimentos", "Saúde", "Outros"],
+        datasets: [
+            {
+                label: "Despesas",
+                data: dadosGrafico,
+                borderWidth: 1,
+            },
+        ],
+    },
     options: {
-        y: {
-            beginAtZero: true,
-            ticks: {
-                stepSize: 1,
+        scales: {
+            y: {
+                beginAtZero: true,
+                ticks: {
+                    stepSize: 1,
+                },
             },
         },
     },
 });
 
-// Desenha a tabela com os dados armazenados no localStorage
 function mostraTabela() {
-    // carrega dados
+    // Carrega dados
     let listadeDespesas = readDespesas();
-    dados = listadeDespesas.filter(
+    let dados = listadeDespesas.filter(
         (t) =>
             filtro.value === "" ||
             t.descricao.toLowerCase().includes(filtro.value.toLowerCase())
     );
 
+// Lista de categorias
+const categorias = ["Alimentação", "Contas", "Educação", "Emergência", "Lazer", "Investimentos", "Saúde", "Outros"];
+
+// Inicializa uma string para armazenar o HTML
+let distribuicaoDespesasHTML = "";
+
+// Percorre todas as categorias
+categorias.forEach((categoria, index) => {
+    // Filtra as despesas da categoria atual
+    let despesasCategoria = dados.filter((despesa) => despesa.categoria === (index + 1).toString());
+
+    // Calcula o total para a categoria atual
+    let totalCategoria = despesasCategoria.reduce((total, despesa) => {
+        return total + parseFloat(despesa.valor.replace(',', '.')); // Ajuste na conversão do valor
+    }, 0);
+
+    // Formata o total como moeda com duas casas decimais
+    let totalCategoriaFormatado = totalCategoria.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+    // Adiciona o HTML para a categoria
+    distribuicaoDespesasHTML += `<p>${categoria}: ${totalCategoriaFormatado}</p>`;
+});
+
+// Atualiza a <div class="distribuicao-despesas">
+let distribuicaoDespesas = document.querySelector(".distribuicao-despesas");
+distribuicaoDespesas.innerHTML = distribuicaoDespesasHTML;
+
     // gera conteúdo da tabela
     let conteudo = "";
     dados.forEach((item) => {
+        let valorFormatado = parseFloat(item.valor).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
         conteudo += `
-        <tr id='linha-${item.id}'>
-        <td class='selecao'>
-          <input type="radio" name="campoSelecao" value="${item.id}" />
-        </td>
-        <td class="celula-1">
-          ${item.descricao}
-        </td>
-        <td class="celula-2"> 
-          ${categoria(item.categoria)}
-        </td>
-        <td class="celula-3"> 
-          ${item.valor}
-        </td>
-        <td class="celula-4"> 
-          ${formataData(item.data)}
-        </td>
-        <td></td>
-      </tr>
-    `;
+            <tr id='linha-${item.id}'>
+                <td class='selecao'>
+                    <input type="radio" name="campoSelecao" value="${item.id}" />
+                </td>
+                <td class="celula-1">
+                    ${item.descricao}
+                </td>
+                <td class="celula-2"> 
+                    ${categoria(item.categoria)}
+                </td>
+                <td class="celula-3"> 
+                    ${valorFormatado}
+                </td>
+                <td class="celula-4"> 
+                    ${formataData(item.data)}
+                </td>
+                <td></td>
+            </tr>
+        `;
     });
+
     corpoTabela.innerHTML = conteudo;
 
     // determina comportamento dos botões e outros componentes interativos
@@ -76,6 +107,8 @@ function mostraTabela() {
     chart.data.datasets[0].data = dadosGrafico;
     chart.update();
 }
+
+// Restante do código...
 
 // Mostra a janela modal para criação de nova despesa
 btAdicionar.onclick = function () {
@@ -272,5 +305,7 @@ function fecharPopUpdespesas() {
     document.getElementById('body').style.filter = 'none';
 
 }
+
+
 // Após preparar todo o código, desenha a versão preliminar da tabela, com dados já existentes
 mostraTabela();

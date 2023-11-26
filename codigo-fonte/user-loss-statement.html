@@ -25,7 +25,7 @@
             <p class="text-minhas-despesas">Minhas Despesas</p>
 
             <a href="../minhas-despesas_Economus/tela-minhas-despesas.html">
-                <p class="text-minhas-despesas">Minhas Despesas</p>
+                <p class="text-minhas-receitas">Minhas Receitas</p>
             </a>
 
             <p class="text-minhas-metas">Minhas Metas</p>
@@ -38,17 +38,19 @@
 
         <div class="subtitulo-despesas">
 
-            <p>Aqui você pode colocar as despesas que teve durante este Mês, atualize 
-            sempre que necessário para manter o seu controle de despesas em dia
+            <p>Aqui você pode colocar as despesas que teve durante este Mês, atualize
+                sempre que necessário para manter o seu controle de despesas em dia
 
         </div>
 
-        <div class="categoria-despesas">
+        <div class="categoria-despesas" id="categoriaDespesas">
 
-            <table>
+            <table class="despesas">
+
+                <p class="text-divs-despesas">Despesas por Categoria</p>
+
                 <thead>
-                    <tr>
-                        <th class="selecao"></th>
+                    <tr class="selecao">
                         <th id="th1" class="col1">Descrição</th>
                         <th id="th2" class="col2">Categoria</th>
                         <th id="th3" class="col3">Valor</th>
@@ -69,43 +71,16 @@
 
         </div>
 
-        <div class="proximas-despesas">
-
-            <p class="text-divs-despesas">Próximas Despesas</p>
-
-        </div>
-
         <div class="lista-contas">
-
-            <p class="text-contas">Contas</p>
-
-            <p class="text-divs-despesas">Despesas por Categoria</p>
 
             <div id="areaGrafico">
 
                 <canvas id="grafico"></canvas>
             </div>
 
-            <p class="text-total">TOTAL</p>
-
-            
-
-
-
-            <a href="javascript: abrirPopUpdespesas();"><img class="imagem-adicionar"
-                    src="images/library_add_FILL0_wght400_GRAD0_opsz24.png"></a>
-
         </div>
 
         <div class="distribuicao-despesas">
-
-            <p class="text-mes-despesas">Novembro</p>
-
-            <p class="text-variaveis-despesas">Variáveis</p>
-            <p class="text-fixas-despesas">Fixas</p>
-
-            <img class="imagem-variaveis" src="images/monitoring_FILL0_wght400_GRAD0_opsz24.png">
-            <img class="imagem-fixas" src="images/office-push-pin.png">
 
         </div>
 
@@ -143,8 +118,8 @@
 
 
 
-        <div id="boxDespesa" class="box">
-            <div class="corpoBox">
+        <div id="corpoBox" class="corpoBox">
+            <div>
                 <header>
                     <span id="fechaBox">&times;</span>
                     <h3>Despesas</h3>

@@ -120,12 +120,13 @@ btAdicionar.onclick = function () {
     campoCategoria.disabled = false;
     campoValor.disabled = false;
     campoData.disabled = false;
-    boxDespesa.style.display = "block";
+    corpoBox.style.display = "flex";
     btMTSalvar.style.display = "inline-block";
     btMTAlterar.style.display = "none";
     btMTExcluir.style.display = "none";
     btMTSalvar.disabled = true;
     campoDescricao.focus();
+    document.getElementById('body').style.filter = 'blur(25px)'
 };
 
 // Verifica se os três campos estão preenchidos antes de criar ou alterar despesa
@@ -157,7 +158,8 @@ btMTSalvar.onclick = function () {
         data: campoData.value,
     };
     createDespesa(despesa, mostraTabela);
-    boxDespesa.style.display = "none";
+    corpoBox.style.display = "none";
+    document.getElementById('body').style.filter = 'none'
 };
 
 // Mostra a janela modal para edição de uma despesa existente
@@ -177,12 +179,13 @@ btEditar.onclick = function () {
         campoCategoria.disabled = false;
         campoValor.disabled = false;
         campoData.disabled = false;
-        boxDespesa.style.display = "block";
+        corpoBox.style.display = "flex";
         btMTSalvar.style.display = "none";
         btMTAlterar.style.display = "inline-block";
         btMTExcluir.style.display = "none";
         btMTAlterar.disabled = false;
         campoDescricao.focus();
+        document.getElementById('body').style.filter = 'blur(25px)'
     }
 };
 
@@ -196,8 +199,9 @@ btMTAlterar.onclick = function () {
         data: campoData.value,
     };
     updateDespesa(despesaEditada);
-    boxDespesa.style.display = "none";
+    corpoBox.style.display = "none";
     mostraTabela();
+    document.getElementById('body').style.filter = 'none'
 };
 
 // Mostra a janela modal para exclusão de uma despesa existente
@@ -217,28 +221,31 @@ btExcluir.onclick = function () {
         campoCategoria.disabled = true;
         campoValor.disabled = true;
         campoData.disabled = true;
-        boxDespesa.style.display = "block";
+        corpoBox.style.display = "flex";
         btMTSalvar.style.display = "none";
         btMTAlterar.style.display = "none";
         btMTExcluir.style.display = "inline-block";
+        document.getElementById('body').style.filter = 'blur(25px)'
     }
 };
 
 // Confirma a exclusão da despesa
 btMTExcluir.onclick = function () {
     deleteDespesa(campoID.value);
-    boxDespesa.style.display = "none";
+    corpoBox.style.display = "none";
+    document.getElementById('body').style.filter = 'none'
     mostraTabela();
 };
 
 // Cancela a criação, alteração ou exclusão da despesa
 btMTCancelar.onclick = function () {
-    boxDespesa.style.display = "none";
+    corpoBox.style.display = "none";
+    document.getElementById('body').style.filter = 'none'
 };
 
 // Configura o botão de fechar a janela modal
 fechaBox.onclick = function () {
-    boxDespesa.style.display = "none";
+    corpoBox.style.display = "none";
 };
 
 // Ordenação pelas três colunas
@@ -294,18 +301,12 @@ limpaFiltro.onclick = function () {
 filtro.onkeyup = function () {
     mostraTabela();
 };
+atualizarBarraDeRolagem();
 
-function abrirPopUpdespesas() {
-    document.getElementById('pop-up-lista-despesas').style.display = 'flex';
-    document.getElementById('body').style.filter = 'blur(25px)';
-
+function atualizarBarraDeRolagem() {
+    let categoriaDespesas = document.getElementById('categoriaDespesas');
+    categoriaDespesas.scrollTop = categoriaDespesas.scrollHeight;
 }
-function fecharPopUpdespesas() {
-    document.getElementById('pop-up-lista-despesas').style.display = 'none';
-    document.getElementById('body').style.filter = 'none';
-
-}
-
 
 // Após preparar todo o código, desenha a versão preliminar da tabela, com dados já existentes
 mostraTabela();

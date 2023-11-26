@@ -43,7 +43,7 @@ body {
 
 }
 
-.text-minhas-despesas {
+.text-minhas-receitas {
     position: absolute;
     left: 880px;
     top: 50px;
@@ -52,7 +52,7 @@ body {
 
 }
 
-.text-minhas-despesas:hover {
+.text-minhas-receitas:hover {
     color: #00FF7F;
     text-decoration: underline;
     cursor: pointer;
@@ -96,8 +96,8 @@ body {
     background-color: #6495ED;
     border-radius: 8px;
     padding: 10px;
-    top: 150px;
-    left: 200px;
+    top: 180px;
+    left: 145px;
     width: 650px;
     font-size: 20px;
 
@@ -109,11 +109,11 @@ body {
     flex-direction: column;
     background-color: #201B2C;
     border-radius: 10px;
-    top: 290px;
+    top: 355px;
     left: 20px;
-    width: 950px;
-    height: 180px;
-    font-size: 20px;
+    width: 900px;
+    height: 320px;
+    font-size: 15px;
     color: #ffffff;
 
 }
@@ -123,38 +123,6 @@ body {
     left: 30px;
     font-weight: bold
 }
-
-.imagem-adicionar {
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
-    height: 30px;
-    width: 30px;
-
-}
-
-.text-total {
-    position: absolute;
-    font-size: 25px;
-    right: 170PX;
-
-}
-
-.proximas-despesas {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    background-color: #201B2C;
-    border-radius: 10px;
-    top: 500px;
-    left: 20px;
-    width: 950px;
-    height: 180px;
-    font-size: 20px;
-    color: #F0FFFF;
-
-}
-
 .text-divs-despesas {
     position: absolute;
     left: 20px;
@@ -164,10 +132,10 @@ body {
 .lista-contas {
     position: absolute;
     background-color: #201B2C;
-    top: 290px;
-    left: 1020px;
+    top: 120px;
+    left: 980px;
     width: 450px;
-    height: 390px;
+    height: 260px;
     border-radius: 10px;
     text-align: center;
 
@@ -266,13 +234,14 @@ body {
 .distribuicao-despesas {
     position: absolute;
     text-align: center;
-    top: 120px;
-    left: 1020px;
+    top: 395px;
+    left: 980px;
     width: 450px;
-    height: 150px;
+    height: 280px;
     border-radius: 10px;
     background-color: #201B2C;
     color: #F0FFFF;
+    font-size: 15px;
 
 }
 
@@ -332,31 +301,173 @@ body {
     height: 40px;
 
 }
+.despesas{
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 100%;
 
+}
+.selecao{
+    text-align: center;
+
+}
+th{
+    left: 0;
+    padding-top: 30px;
+    padding-left: -10px;
+
+}
 .corpoBox header {
     margin-top: 0;
 }
 
 .corpoBox {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 10px 20px;
-    border: 1px solid #888;
-    width: 25rem;
-    min-width: 25rem;
-
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    animation-name: animacao;
-    animation-duration: 1s
+    color: #F0FFFF;
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    border: 5px solid #000000;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #201B2C;
+    width: 400px;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
 }
 
 #areaGrafico {
-    max-width: 850px;
+    position: absolute;
+    top: 10px;
+    left: 100px;
     margin: 0 auto;
-    height: 350px;
+    height: 250px;
+
 }
 
 #areaGrafico h3 {
     margin-top: 2em;
     margin-bottom: 0;
+}
+table{
+    text-align: center;
+
+}
+#btMTSalvar{
+    background-color: #00FF7F;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+
+}
+#btMTCancelar{
+    background-color: #B22222;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+
+}
+.corpoBox input, select{
+    color: #F0FFFF;
+    background-color: #514069;
+    border-radius: 5px;
+    height: 40px;
+    width: 180px;
+    font-size: 20px;
+
+}
+.botao{
+    position: absolute;
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+    top: 280px;
+    font-size: 18px;
+
+}
+.botao:hover{
+    cursor:pointer;
+    background-color: #6495ED;
+
+
+}
+#btAdicionar{
+    background-color: #00FF7F;
+    top: 250px;
+    left: 50px;
+
+}
+#btEditar{
+    background-color: #FFD700;
+    top: 250px;
+    left: 200px;
+}
+#btExcluir{
+    background-color: #B22222;
+    top: 250px;
+    left: 350px;
+
+}
+#campoDescrição{
+    position: absolute;
+    left: 20px;
+
+}
+tbody{
+    position: absolute;
+    padding-top: 50px;
+    font-size: 18px;
+    left: 20px;
+    overflow-y: scroll;
+    height: 160px;
+    width: 875px;
+
+}
+.celula-1, .celula-2, .celula-3,.celula-4{
+    padding-left: 110px;
+    padding-bottom: 10px;
+
+}
+#th1{
+    position: absolute;
+    left: 145px;
+
+}
+#th2{
+    position: absolute;
+    left: 315px;
+    
+}
+#th3{
+    position: absolute;
+    left: 525px;
+    
+}
+#th4{
+    position: absolute;
+    left: 740px;
+    
+}
+#btMTAlterar{
+    background-color: #FFD700;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    top: 320px;
+    font-size: 20px;
+
+}
+#btMTExcluir{
+    background-color: #6495ED;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    top: 320px;
+    font-size: 20px;
+
 }

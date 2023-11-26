@@ -12,6 +12,14 @@ document.addEventListener(`DOMContentLoaded`, function() {
 });
 
 document.addEventListener(`DOMContentLoaded`, function() {
+    const userProfileLik = document.getElementById(`usr-profile`);
+
+    const userProfilePageURL = ``;
+
+    userProfileLik.href = userProfilePageURL;
+});
+
+document.addEventListener(`DOMContentLoaded`, function() {
     const primaryHeader = document.getElementById(`greetingPrimary`);
     const secondaryHeader = document.getElementById(`greetingSecondary`);
 

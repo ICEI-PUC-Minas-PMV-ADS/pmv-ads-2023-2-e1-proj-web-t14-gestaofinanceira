@@ -1,22 +1,23 @@
 let dadosGrafico = [0, 0];
-let seriesGrafico = {
-    labels: ["Fixa", "Variável"],
-    datasets: [
-        {
-            label: "Receitas",
-            data: dadosGrafico,
-            borderWidth: 1,
-        },
-    ],
-};
 let chart = new Chart(grafico, {
     type: "doughnut",
-    data: seriesGrafico,
+    data: {
+        labels: ["Fixa", "Variável"],
+        datasets: [
+            {
+                label: "Receitas",
+                data: dadosGrafico,
+                borderWidth: 1,
+            },
+        ],
+    },
     options: {
-        y: {
-            beginAtZero: true,
-            ticks: {
-                stepSize: 1,
+        scales: {
+            y: {
+                beginAtZero: true,
+                ticks: {
+                    stepSize: 1,
+                },
             },
         },
     },
@@ -26,15 +27,45 @@ let chart = new Chart(grafico, {
 function mostraTabela() {
     // carrega dados
     let listadeReceitas = readReceitas();
-    dados = listadeReceitas.filter(
+    let dados = listadeReceitas.filter(
         (t) =>
             filtro.value === "" ||
             t.descricao.toLowerCase().includes(filtro.value.toLowerCase())
     );
 
+    const tipos = ["Fixa", "Variável"];
+
+// Inicializa uma string para armazenar o HTML
+let distribuicaoReceitasHTML = "";
+
+// Percorre todas as tipos
+tipos.forEach((tipo, index) => {
+    // Filtra as receitas da tipo atual
+    let receitasTipo = dados.filter((receita) => receita.tipo === (index + 1).toString());
+
+    // Calcula o total para a tipo atual
+    let totalTipo = receitasTipo.reduce((total, receita) => {
+        return total + parseFloat(receita.valor.replace(',', '.')); // Ajuste na conversão do valor
+    }, 0);
+
+    // Formata o total como moeda com duas casas decimais
+    let totalTipoFormatado = totalTipo.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+    // Adiciona o HTML para a tipo
+    distribuicaoReceitasHTML += `<p>${tipo}: ${totalTipoFormatado}</p>`;
+});
+
+// Atualiza a <div class="distribuicao-receitas">
+let distribuicaoReceitas = document.querySelector(".distribuicao-receitas");
+distribuicaoReceitas.innerHTML = distribuicaoReceitasHTML;
+
+
+
+
     // gera conteúdo da tabela
     let conteudo = "";
     dados.forEach((item) => {
+        let valorFormatado = parseFloat(item.valor).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
         conteudo += `
       <tr id='linha-${item.id}'>
         <td class='selecao'>
@@ -44,7 +75,7 @@ function mostraTabela() {
           ${item.descricao}
         </td>
         <td class="celula-2"> 
-          ${item.valor}
+          ${valorFormatado}
         </td>
         <td class="celula-3">
           ${tipo(item.tipo)}
@@ -71,8 +102,8 @@ function mostraTabela() {
     btExcluir.disabled = true;
 
     // atualiza gráfico de receitas por tipo
-    dadosGrafico = [0, 0, 0];
-    dados.forEach((t) => dadosGrafico[t.tipo - 1]++);
+    dadosGrafico = [0, 0];
+    dados.forEach((t) => (dadosGrafico[t.tipo - 1] += parseFloat(t.valor)));
     chart.data.datasets[0].data = dadosGrafico;
     chart.update();
 }

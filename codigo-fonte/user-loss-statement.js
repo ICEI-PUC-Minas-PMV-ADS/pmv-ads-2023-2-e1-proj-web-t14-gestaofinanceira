@@ -310,3 +310,27 @@ function atualizarBarraDeRolagem() {
 
 // Após preparar todo o código, desenha a versão preliminar da tabela, com dados já existentes
 mostraTabela();
+
+document.addEventListener(`DOMContentLoaded`, function() {
+    const userProfitsLink = document.getElementById(`usr-profits-statement`);
+ 
+    const userProfitsPageURL = `../user-profit-statement/user-profit-statement.html`;
+ 
+    userProfitsLink.href = userProfitsPageURL;
+});
+
+document.addEventListener(`DOMContentLoaded`, function() {
+    const userProfileLink = document.getElementById(`usr-profile`);
+ 
+    const userProfilePageURL = `../user-profile/user-profile.html`;
+ 
+    userProfileLink.href = userProfilePageURL;
+});
+
+document.addEventListener(`DOMContentLoaded`, function() {
+    const userProfileLink = document.getElementById(`usr-goals`);
+ 
+    const userProfilePageURL = ``;
+ 
+    userProfileLink.href = userProfilePageURL;
+});

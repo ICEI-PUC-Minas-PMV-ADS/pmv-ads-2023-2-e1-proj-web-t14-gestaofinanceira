@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Despesas - Economus</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="images/icone-da-pagina_resized.ico">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="user-loss-statement-crud.js"></script>
+    <script defer src="user-loss-statement.js"></script>
+    <link rel="stylesheet" href="user-loss-statement.css">
+
+
+</head>
+
+<body>
+
+    <div id="body">
+
+        <section class="cabecalho">
+
+            <a href="#" id="homepage"><img class="logo-cabecalho" src="images/logo-login.png"></a>
+
+            <p class="text-minhas-despesas">Minhas Despesas</p>
+
+            <a href="#" id="usr-profits-statement">
+                <p id="text-minhas-receitas" class="text-minhas-receitas">Minhas Receitas</p>
+            </a>
+
+            <a href="#" id="usr-goals">
+            <p class="text-minhas-metas">Minhas Metas</p>
+            </a>
+
+            <a href="#" id="usr-profile">
+                <p class="text-meu-perfil">Meu Perfil</p>
+            </a>
+
+        </section>
+
+        <div class="subtitulo-despesas">
+
+            <p>Aqui você pode colocar as despesas que teve durante este Mês, atualize
+                sempre que necessário para manter o seu controle de despesas em dia
+
+        </div>
+
+        <div class="categoria-despesas" id="categoriaDespesas">
+
+            <table class="despesas">
+
+                <p class="text-divs-despesas">Despesas por Categoria</p>
+
+                <thead>
+                    <tr class="selecao">
+                        <th id="th1" class="col1">Descrição</th>
+                        <th id="th2" class="col2">Categoria</th>
+                        <th id="th3" class="col3">Valor</th>
+                        <th id="th4" class="col4">Data</th>
+                    </tr>
+                </thead>
+                <tbody id="corpoTabela"></tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">
+                            <button id="btAdicionar" class="botao">Adicionar</button>
+                            <button id="btEditar" class="botao">Editar</button>
+                            <button id="btExcluir" class="botao">Excluir</button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+
+        <div class="lista-contas">
+
+            <div id="areaGrafico">
+
+                <canvas id="grafico"></canvas>
+            </div>
+
+        </div>
+
+        <div class="distribuicao-despesas">
+
+        </div>
+
+        <section class="rodape">
+
+            <footer>
+                <p>Copyright<span class="copyright">&#169;</span> 2023 - todos os direitos reservados</p>
+            </footer>
+
+        </section>
+
+    </div>
+
+    <div id="pop-up-lista-despesas" class="pop-up-lista-despesas">
+
+        <img class="imagem-adicionar-despesas" src="images/add_FILL0_wght400_GRAD0_opsz24.png">
+        <img class="imagem-editar-despesas" src="images/edit_FILL0_wght400_GRAD0_opsz24.png">
+
+        <a href="javascript: fecharPopUpdespesas();"><input id="botao-cancelar-despesas" class="botao-cancelar-despesas"
+                type="submit" value="Cancelar"></input></a>
+        <a href="javascript: fecharPopUpdespesas();"><input id="botao-salvar-despesas" class="botao-salvar-despesas"
+                type="submit" value="Salvar"></input></a>
+
+    </div>
+
+
+    <main>
+
+        <div id="areaFiltro">
+            <label for="filtro">Busca: </label>
+            <input id="filtro" type="text" />
+            <span id="limpaFiltro">&times;</span>
+        </div>
+
+
+
+
+        <div id="corpoBox" class="corpoBox">
+            <div>
+                <header>
+                    <span id="fechaBox">&times;</span>
+                    <h3>Despesas</h3>
+                </header>
+                <p>
+                    <label for="campoDescricao">Descrição: </label>
+                    <input type="text" id="campoDescricao" />
+                    <input type="hidden" id="campoID" />
+                </p>
+                <p>
+                    <label for="campoCategoria">Categoria: </label>
+                    <select id="campoCategoria">
+                        <option value="1">Alimentação</option>
+                        <option value="2">Contas</option>
+                        <option value="3">Educação</option>
+                        <option value="4">Emergência</option>
+                        <option value="5">Lazer</option>
+                        <option value="6">Investimentos</option>
+                        <option value="7">Saúde</option>
+                        <option value="8">Outros</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="campoValor">Valor: </label>
+                    <input type="number" id="campoValor" />
+                </p>
+                <p>
+                    <label for="campoData">Data: </label>
+                    <input type="date" id="campoData" />
+                </p>
+
+                <p>
+                    <button id="btMTSalvar">Salvar</button>
+                    <button id="btMTAlterar">Alterar</button>
+                    <button id="btMTExcluir">Excluir</button>
+                    <button id="btMTCancelar">Cancelar</button>
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+
+
+</body>
+
+</html>

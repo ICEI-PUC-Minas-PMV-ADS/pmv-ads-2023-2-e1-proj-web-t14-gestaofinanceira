@@ -1,0 +1,473 @@
+body {
+    display: flex;
+    background-color: #F0FFFF;
+    margin: 0;
+    font-family: 'open sans', sans-serif;
+    height: 742px;
+    width: 1488px;
+
+}
+
+#body {
+    filter: none;
+
+}
+
+.cabecalho {
+    display: flex;
+    background-color: #201B2C;
+    height: 110px;
+    width: 1488px;
+
+}
+
+.logo-cabecalho {
+    position: relative;
+    height: 110px;
+    width: 125px;
+    transition: background-color 0.8s ease;
+
+}
+
+.logo-cabecalho:hover {
+    background-color: #6495ED;
+    cursor: pointer;
+
+}
+
+.text-minhas-despesas {
+    position: absolute;
+    color: #F0FFFF;
+    left: 180px;
+    font-size: 40px;
+
+}
+
+.text-minhas-receitas {
+    position: absolute;
+    left: 880px;
+    top: 50px;
+    color: #F0FFFF;
+    font-size: 25px;
+
+}
+
+.text-minhas-receitas:hover {
+    color: #00FF7F;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.text-minhas-metas {
+    position: absolute;
+    left: 1120px;
+    top: 50px;
+    color: #F0FFFF;
+    font-size: 25px;
+
+}
+
+.text-minhas-metas:hover {
+    color: #FFD700;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.text-meu-perfil {
+    position: absolute;
+    left: 1330px;
+    top: 50px;
+    color: #F0FFFF;
+    font-size: 25px;
+
+}
+
+.text-meu-perfil:hover {
+    color: #6495ED;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.subtitulo-despesas {
+    position: absolute;
+    background-color: #6495ED;
+    border-radius: 8px;
+    padding: 10px;
+    top: 180px;
+    left: 145px;
+    width: 650px;
+    font-size: 20px;
+
+}
+
+.categoria-despesas {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #201B2C;
+    border-radius: 10px;
+    top: 355px;
+    left: 20px;
+    width: 900px;
+    height: 320px;
+    font-size: 15px;
+    color: #ffffff;
+
+}
+
+.text-categoria-despesa {
+    position: absolute;
+    left: 30px;
+    font-weight: bold
+}
+.text-divs-despesas {
+    position: absolute;
+    left: 20px;
+
+}
+
+.lista-contas {
+    position: absolute;
+    background-color: #201B2C;
+    top: 120px;
+    left: 980px;
+    width: 450px;
+    height: 260px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.text-contas {
+    font-size: 20px;
+    color: #F0FFFF;
+
+}
+
+.pop-up-lista-despesas {
+    color: #F0FFFF;
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    border: 5px solid #000000;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #201B2C;
+    width: 400px;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+
+}
+
+.imagem-adicionar-despesas {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    height: 45px;
+    width: 45px;
+
+}
+
+.imagem-adicionar-despesas:hover {
+    cursor: pointer;
+
+}
+
+.imagem-editar-despesas {
+    position: absolute;
+    left: 80px;
+    bottom: 20px;
+    height: 40px;
+    width: 40px;
+
+}
+
+.imagem-editar-despesas:hover {
+    cursor: pointer;
+
+}
+
+.botao-cancelar-despesas {
+    position: absolute;
+    border-radius: 6px;
+    background-color: #B22222;
+    font-size: 20px;
+    bottom: 20px;
+    height: 50px;
+    width: 100px;
+    right: 170px;
+
+}
+
+.botao-cancelar-despesas:hover {
+    background-color: #6495ED;
+    cursor: pointer;
+
+
+}
+
+.botao-salvar-despesas {
+    position: absolute;
+    border-radius: 6px;
+    background-color: #00FF7F;
+    font-size: 20px;
+    right: 40px;
+    bottom: 20px;
+    height: 50px;
+    width: 100px;
+
+}
+
+.botao-salvar-despesas:hover {
+    background-color: #6495ED;
+    cursor: pointer;
+
+
+}
+
+.distribuicao-despesas {
+    position: absolute;
+    text-align: center;
+    top: 395px;
+    left: 980px;
+    width: 450px;
+    height: 280px;
+    border-radius: 10px;
+    background-color: #201B2C;
+    color: #F0FFFF;
+    font-size: 15px;
+
+}
+
+.imagem-variaveis {
+    position: absolute;
+    top: 35px;
+    width: 40px;
+    height: 40px;
+    left: 80px;
+
+}
+
+.imagem-fixas {
+    position: absolute;
+    top: 35px;
+    width: 40px;
+    height: 40px;
+    right: 70px;
+
+}
+
+.mes-despesas {
+    font-size: 20px;
+    margin-top: 5px;
+
+}
+
+.text-variaveis-despesas {
+    position: absolute;
+    top: 65px;
+    left: 70px;
+
+}
+
+.text-fixas-despesas {
+    position: absolute;
+    top: 65px;
+    right: 70px;
+
+}
+
+.copyright {
+    content: '\\00A9';
+
+}
+
+.rodape {
+    display: flex;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    color: #F0FFFF;
+    background-color: #201B2C;
+    font-size: 13px;
+    top: 702px;
+    width: 1488px;
+    height: 40px;
+
+}
+.despesas{
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 100%;
+
+}
+.selecao{
+    text-align: center;
+
+}
+th{
+    left: 0;
+    padding-top: 30px;
+    padding-left: -10px;
+
+}
+.corpoBox header {
+    margin-top: 0;
+}
+
+.corpoBox {
+    color: #F0FFFF;
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    border: 5px solid #000000;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #201B2C;
+    width: 400px;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+}
+
+#areaGrafico {
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    margin: 0 auto;
+    height: 250px;
+
+}
+
+#areaGrafico h3 {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+table{
+    text-align: center;
+
+}
+#btMTSalvar{
+    background-color: #00FF7F;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+
+}
+#btMTCancelar{
+    background-color: #B22222;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+
+}
+.corpoBox input, select{
+    color: #F0FFFF;
+    background-color: #514069;
+    border-radius: 5px;
+    height: 40px;
+    width: 180px;
+    font-size: 20px;
+
+}
+.botao{
+    position: absolute;
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+    top: 280px;
+    font-size: 18px;
+
+}
+.botao:hover{
+    cursor:pointer;
+    background-color: #6495ED;
+
+
+}
+#btAdicionar{
+    background-color: #00FF7F;
+    top: 250px;
+    left: 50px;
+
+}
+#btEditar{
+    background-color: #FFD700;
+    top: 250px;
+    left: 200px;
+}
+#btExcluir{
+    background-color: #B22222;
+    top: 250px;
+    left: 350px;
+
+}
+#campoDescrição{
+    position: absolute;
+    left: 20px;
+
+}
+tbody{
+    position: absolute;
+    padding-top: 50px;
+    font-size: 18px;
+    left: 20px;
+    overflow-y: scroll;
+    height: 160px;
+    width: 875px;
+
+}
+.celula-1, .celula-2, .celula-3,.celula-4{
+    padding-left: 110px;
+    padding-bottom: 10px;
+
+}
+#th1{
+    position: absolute;
+    left: 145px;
+
+}
+#th2{
+    position: absolute;
+    left: 315px;
+    
+}
+#th3{
+    position: absolute;
+    left: 525px;
+    
+}
+#th4{
+    position: absolute;
+    left: 740px;
+    
+}
+#btMTAlterar{
+    background-color: #FFD700;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    top: 320px;
+    font-size: 20px;
+
+}
+#btMTExcluir{
+    background-color: #6495ED;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    top: 320px;
+    font-size: 20px;
+
+}

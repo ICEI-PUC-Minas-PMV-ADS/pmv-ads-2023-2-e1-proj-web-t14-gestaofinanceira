@@ -11,6 +11,8 @@ document.addEventListener(`DOMContentLoaded`, function() {
     headerLogo.src = imagePath;
 });
 
+
+
 document.addEventListener(`DOMContentLoaded`, function() {
     const userProfileLink = document.getElementById(`usr-profile`);
 
@@ -45,4 +47,12 @@ document.addEventListener(`DOMContentLoaded`, function() {
 
     primaryHeader.textContent = `Economus - Controle e Gerenciamento Financeiro Personalizado`;
     secondaryHeader.textContent = `Bem-vindo(a), ${currentUser}`;
+});
+
+document.addEventListener(`DOMContentLoaded`, function() {
+    const isLoggedIn = localStorage.getItem(`isLoggedIn`);
+
+    if (!isLoggedIn || isLoggedIn !== 'true') {
+        window.location.href = `/../../codigo-fonte/src/user-login/tela-de-login.html`;
+    }
 });

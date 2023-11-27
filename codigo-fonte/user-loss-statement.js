@@ -334,3 +334,11 @@ document.addEventListener(`DOMContentLoaded`, function() {
  
     userProfileLink.href = userProfilePageURL;
 });
+
+document.addEventListener(`DOMContentLoaded`, function() {
+    const usergoalsLink = document.getElementById(`homepage`);
+ 
+    const homepagePageURL = `../homepage/index.html`;
+ 
+    homepageLink.href = homepagePageURL;
+});

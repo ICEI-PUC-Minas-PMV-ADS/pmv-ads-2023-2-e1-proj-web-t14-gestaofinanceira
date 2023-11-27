@@ -23,7 +23,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
   <td>CT-01: Verificar o funcionamento do formulário e adição das informações na lista </td>
   <td>
    <ul>
-    <li>RF-08: Opção para o usuário classificar despesas/receitas de acordo com sua categoria.</li>
+    <li>RF-08: Opção para o usuário classificar despesas/receitas de acordo com sua tipo/categoria.</li>
     <li>RF-09: Permitir que o usuário nomeie suas despesas/receitas.</li>
     <li>RF-10: Capacidade de adicionar, editar ou excluir despesas/receitas.</li>
    </ul>
@@ -34,9 +34,8 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
     <li>Acessar o navegador.</li>
     <li>Informar o endereço do site.</li>
     <li>Fazer o login na tela respectiva.</li>
-    <li>Clicar no link da tela 'Minhas Despesas'/'Minhas Receitas.</li>
     <li>Clicar no botão adicionar na parte inferior da lista</li>
-    <li>Inserir as informações necessárias no formulário apresentado</li>
+    <li>Adicionar/editar/excluir as informações necessárias no formulário apresentado</li>
     <li>Visualizar essas informações sendo apresentadas na lista na parte principal da página respectiva</li>
    </ol>
    </td>
@@ -67,7 +66,6 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
     <li>Acessar o navegador.</li>
     <li>Informar o endereço do site.</li>
     <li>Fazer o login.</li>
-    <li>Clicar no menu 'Minhas Despesas' ou 'Minhas Receitas'.</li>
     <li>Visualizar se a página recuperou as informações anteriormente inseridas.</li>
    </ol>
    </td>

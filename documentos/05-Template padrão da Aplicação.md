@@ -1,43 +1,12 @@
 # Template padrão da Aplicação
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual e a linguagem de programação JavaScript foi utilizada para a construção do menu responsivo.
+Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
 
-As páginas terão como elementos padrões o menu de navegação, o header, além dos elementos de identidade visual citados abaixo:
+[Apresente a estrutura padrão da sua aplicação.]
 
-* **Cores:** #201823, #201b2c; 
-* **Font-family:** sans-serif;
-* **Font-size:** 15px e 24px;
-
-O código utilizado para a construção dos elementos citados, incluindo a responsividade, pode ser consultado aqui. As imagens e ícones utilizados no projeto estão disponíveis aqui.
-
-### Tela de visualização das Finanças
-
-Exibe informações como receitas, despesas e metas.
-
-<div style="text-align:left;">
-  <img src="img/prototype/index.png" alt="homepage image" style="max-width:100%; height:auto;">
-</div>
-
-
-
-Figura 1 - Tela Principal
-
-### Tela de visualização das Despesas 
-
-Exibe informações sobre as despesas, despesas por categoria e próximas despesas.
-
-<div style="text-align:left;">
-  <img src="img/prototype/loss-statement.png" alt="loss statement image" style="max-width:100%; height:auto;">
-</div>
-
-
-
-Figura 2 - Tela de Despesas
-
-Para a criação do logotipo do site foi utilizada a cor roxo. A utilização da imagem do polvo como protetor da vida financeira fazendo uma analogia ao polvo que protege o baú do tesouro impedindo-o de ser usurpado.
-
-<div style="text-align:left;">
-  <img src="img/logo-economus.png" alt="logo-economus" style="width:75px; height:75px;">
-</div>
-
-Figura 3 - Logotipo da aplicação web ECONOMUS
+> **Links Úteis**:
+>
+> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
+> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
+> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
+> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)

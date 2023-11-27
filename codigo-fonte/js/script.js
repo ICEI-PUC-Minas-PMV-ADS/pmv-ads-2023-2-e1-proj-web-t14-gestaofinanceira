@@ -28,9 +28,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const userReportsLink = document.querySelector('.side-menu li:nth-child(4) a');
 
 
-    const userProfitURL = '../user-profit-statement/user-profit-statement.html';
-    const userLossURL = '../user-loss-statement/user-loss-statement.html';
-    const userGoalsURL = '../user-goals/user-goals.html';
+    const userProfitURL = '/../../codigo-fonte/src/user-profit-statement/user-profit-statement.html';
+    const userLossURL = '/../../codigo-fonte/user-loss-statement.html';
+    const userGoalsURL = '/../../codigo-fonte/src/user-goals/user-goals.html';
     const userReportsURL = '';
 
     userProfitLink.href = userProfitURL;

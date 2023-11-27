@@ -306,3 +306,11 @@ function fecharPopUpReceitas() {
 
 // Após preparar todo o código, desenha a versão preliminar da tabela, com dados já existentes
 mostraTabela();
+
+document.addEventListener(`DOMContentLoaded`, function() {
+    const isLoggedIn = localStorage.getItem(`isLoggedIn`);
+
+    if (!isLoggedIn || isLoggedIn !== 'true') {
+        window.location.href = `/../../codigo-fonte/src/user-login/tela-de-login.html`;
+    }
+});

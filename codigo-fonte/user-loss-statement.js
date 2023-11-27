@@ -314,7 +314,7 @@ mostraTabela();
 document.addEventListener(`DOMContentLoaded`, function() {
     const userProfitsLink = document.getElementById(`usr-profits-statement`);
  
-    const userProfitsPageURL = `../user-profit-statement/user-profit-statement.html`;
+    const userProfitsPageURL = `/../../codigo-fonte/src/user-profit-statement/user-profit-statement.html`;
  
     userProfitsLink.href = userProfitsPageURL;
 });
@@ -341,4 +341,12 @@ document.addEventListener(`DOMContentLoaded`, function() {
     const homepagePageURL = `../homepage/index.html`;
  
     homepageLink.href = homepagePageURL;
+});
+
+document.addEventListener(`DOMContentLoaded`, function() {
+    const isLoggedIn = localStorage.getItem(`isLoggedIn`);
+
+    if (!isLoggedIn || isLoggedIn !== 'true') {
+        window.location.href = `/../../codigo-fonte/src/user-login/tela-de-login.html`;
+    }
 });

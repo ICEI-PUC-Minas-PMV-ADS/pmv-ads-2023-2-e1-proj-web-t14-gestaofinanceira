@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="user-profile.css">
+    <script defer src="user-profile.js"></script>
+
+    <link rel="shortcut icon" type="imagex/png" href="images/icone-da-pagina_resized.ico">
+    <title>Meu Perfil - Economus</title>
+</head>
+<body>
+
+    <div id="body">
+
+        <section class="cabecalho">
+
+            <img class="logo-cabecalho" src="images/logo-login.png">
+
+            <p class="text-meu-perfil">Meu Perfil</p>
+
+            <a href="#" id="usr-profits-statement"><p class="text-minhas-receitas">Minhas Receitas</p></a>
+
+            <a href="#" id="usr-loss-profits-statement"><p class="text-minhas-despesas">Minhas Despesas</p></a>
+
+            <a href="#" id="usr-goals"><p class="text-minhas-metas">Minhas Metas</p></a>
+
+        </section>
+
+        <section class="area-principal">
+
+            <p class="dados-pessoais">Dados Pessoais</p>
+            <br><br>
+
+            <div class="lista-dados">
+
+                <p>Nome: </p>
+                
+                <p>Senha: </p>
+                
+                <p>E-mail: </p>
+                
+                <p>Telefone: </p>
+
+            </div>
+
+            <a href="javascript: abrirAlterarSenha();"><img class="imagem-password" src="images/password_FILL0_wght400_GRAD0_opsz24.png"></a>
+
+            <a href="javascript: abrirEncerrar();"><p class="encerrar-sessao">Encerrar Sessão</p></a>
+
+        </section>
+
+        <section class="rodape">
+            
+            <footer><p>Copyright<span class="copyright">&#169;</span> 2023 - todos os direitos reservados</p></footer>
+        
+        </section>
+
+    </div>
+
+    <div id="pop-up-encerrar" class="pop-up-encerrar">
+
+        <p>Deseja encerrar a sua Sessão?</p>
+
+        <a href="javascript: fecharEncerrar ()"><input class="input-retornar" type="submit" name="Retornar" value="Retornar"></a>
+        <a href="../login_Economus/tela-login.html"><input class="input-encerrar" type="submit" name="encerrar" value="Encerrar"></a>
+
+    </div>
+
+    <form id="pop-up-alterar-senha" class="pop-up-alterar-senha">
+
+        <p>Alterar senha</p>
+      
+        <input id="input-senhas1" class="input-senhas" type="text" placeholder="Senha atual" required>
+        <br>
+      
+        <input id="input-senhas2" class="input-senhas" type="text" placeholder="Nova senha" required>
+        <br>
+      
+        <input id="input-senhas3" class="input-senhas" type="text" placeholder="Repetir senha" required>
+      
+        <a href="javascript: fecharAlterarSenha();"><input id="input-cancelar" class="input-cancelar" type="submit" value="Cancelar"></a>
+      
+        <input class="input-concluir" type="submit" value="Concluir">
+      
+    </form>
+    
+</body>
+</html>

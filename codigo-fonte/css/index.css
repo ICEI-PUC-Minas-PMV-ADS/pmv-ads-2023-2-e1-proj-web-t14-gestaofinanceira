@@ -107,8 +107,55 @@ section.balance-section {
     color: gold;
 }
 
-.home-footer {
+.side-menu {
+    width: 25%;
+    background-color: #201823;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-menu li {
+    list-style-type: none;
+    border-bottom: 2px;
+}
+
+.side-menu li a {
+    display: block;
+    padding: 0.5em;
     color: #fffafa;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.side-menu li:last-child {
+    border-bottom: none;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: #fffafa;
+    display: block;
+}
+
+.side-menu a:hover {
+    background-color: #201823;;
+    color: #01ffff;
+    border-color: #fffafa;
+}
+
+.home-footer {
+    display: flex;
+    flex-direction: column;
+    color: #fffafa;
+    align-items: center;
 }
 
 .home-footer a {

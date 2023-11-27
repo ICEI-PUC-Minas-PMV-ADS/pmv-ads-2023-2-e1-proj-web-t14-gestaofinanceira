@@ -51,3 +51,11 @@ document.addEventListener(`DOMContentLoaded`, function() {
  
     usergoalsLink.href = usergoalsPageURL;
 });
+
+document.addEventListener(`DOMContentLoaded`, function() {
+    const usergoalsLink = document.getElementById(`homepage`);
+ 
+    const homepagePageURL = `../homepage/index.html`;
+ 
+    homepageLink.href = homepagePageURL;
+});

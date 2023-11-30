@@ -16,7 +16,7 @@ document.addEventListener(`DOMContentLoaded`, function() {
 document.addEventListener(`DOMContentLoaded`, function() {
     const userProfileLink = document.getElementById(`usr-profile`);
 
-    const userProfilePageURL = `../user-profile/user-profile.html`;
+    const userProfilePageURL = `/../../codigo-fonte/src/user-profile/user-profile.html`;
 
     userProfileLink.href = userProfilePageURL;
 });
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     const userProfitURL = '/../../codigo-fonte/src/user-profit-statement/user-profit-statement.html';
-    const userLossURL = '/../../codigo-fonte/user-loss-statement.html';
+    const userLossURL = '/../../codigo-fonte/src/user-loss-statement/user-loss-statement.html';
     const userGoalsURL = '/../../codigo-fonte/src/user-goals/user-goals.html';
     const userReportsURL = '';
 

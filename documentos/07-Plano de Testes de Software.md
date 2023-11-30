@@ -111,4 +111,40 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
  </tr>
 </table>
 
-
+<table>
+    <thead>
+        <tr>
+            <th>Caso de teste</th>
+            <th>Requisitos associados</th>
+            <th>Objetivo do teste</th>
+            <th>Passos</th>
+            <th>Critérios de êxito</th>
+            <th>Responsável</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>CT-04: Verificar a exibição dos elementos da tela principal</td>
+            <td>
+                RF-21, RF-22, RF-23, RF-24, RF-25, RF-26, RF-27
+            </td>
+            <td>Verificar se os elementos da tela principal são exibidos corretamente</td>
+            <td>
+                <ol>
+                    <li>Acessar o navegador.</li>
+                    <li>Informar o endereço do site.</li>
+                    <li>Fazer o login na tela respectiva.</li>
+                    <li>Verificar se o logotipo da aplicação é exibido na posição superior esquerda.</li>
+                    <li>Verificar se a saudação personalizada é exibida ao lado do logotipo.</li>
+                    <li>Confirmar se o saldo atual do usuário é exibido na seção designada.</li>
+                    <li>Checar se o total das despesas do usuário é exibido na seção correspondente.</li>
+                    <li>Clicar no link para direcionar o usuário para o perfil.</li>
+                    <li>Verificar se as opções do menu são apresentadas corretamente.</li>
+                    <li>Analisar se o gráfico visual do desempenho financeiro do usuário é exibido na tela.</li>
+                </ol>
+            </td>
+            <td>Todos os elementos da tela principal (logotipo, saudação, saldo, despesas, perfil, menu e gráfico) são exibidos corretamente.</td>
+            <td>Rodiney</td>
+        </tr>
+    </tbody>
+</table>

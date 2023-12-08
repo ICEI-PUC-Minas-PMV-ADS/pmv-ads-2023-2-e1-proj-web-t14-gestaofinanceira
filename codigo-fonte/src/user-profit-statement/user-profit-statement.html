@@ -15,162 +15,139 @@
 </head>
 <body>
 
-    <div  id="body">
-    
-        <section class="cabecalho">
-
-            <img class="logo-cabecalho" src="images/logo-login.png">
-
-            <p class="text-minhas-receitas">Minhas Receitas</p>
-
-            <a href="../minhas-despesas_Economus/tela-minhas-despesas.html"><p class="text-minhas-despesas">Minhas Despesas</p></a>
-
-            <p class="text-minhas-metas">Minhas Metas</p>
-
-            <a href="../meu-perfil_Economus/tela-meu-perfil.html"><p class="text-meu-perfil">Meu Perfil</p></a>
-
-        </section>
-
-        <div class="subtitulo-receitas">
-
-            <p>Aqui você pode colocar as receitas que teve durante este Mês, atualize 
-            sempre que necessário para manter o seu controle de receitas em dia</p>
-
-        </div>
-
-        <div class="categoria-receitas">
-
-            <p class="text-divs-receitas">Receitas por Categoria</p>
-
-            <div id="areaGrafico">
-              
-              <canvas id="grafico"></canvas>
-            </div>
-
-            <p class="text-total">TOTAL</p>
-
-        </div>
-
-        <div class="proximas-receitas">
-
-            <p class="text-divs-receitas">Próximas Receitas</p>
-            
-        </div>
-
-        <div class="lista-contas">
-
-            <p class="text-contas">Contas</p>
-
-            <table>
-              <thead>
-                <tr>
-                  <th class="selecao"></th>
-                  <th id="th1" class="col1">Descrição</th>
-                  <th id="th2" class="col2">Valor</th>
-                  <th id="th3" class="col3">Tipo</th>
-                  <th id="th4" class="col4">Data</th>
-                </tr>
-              </thead>
-              <tbody id="corpoTabela"></tbody>
-              <tfoot>
-                <tr>
-                  <td colspan="4">
-                    <button id="btAdicionar" class="botao">Adicionar</button>
-                    <button id="btEditar" class="botao">Editar</button>
-                    <button id="btExcluir" class="botao">Excluir</button>
-                  </td>
-                </tr>
-              </tfoot>
-           </table>
-
-            
-
-            <a href="javascript: abrirPopUpReceitas();"><img class="imagem-adicionar" src="images/library_add_FILL0_wght400_GRAD0_opsz24.png"></a>
-        
-        </div>
-
-        <div class="distribuicao-receitas">
-
-            <p class="text-mes-receitas">Novembro</p>
-        
-            <p class="text-variaveis-receitas">Variáveis</p>
-            <p class="text-fixas-receitas">Fixas</p>
-        
-            <img class="imagem-variaveis" src="images/monitoring_FILL0_wght400_GRAD0_opsz24.png">
-            <img class="imagem-fixas" src="images/office-push-pin.png">
-        
-        </div>
-
-        <section class="rodape">
-        
-            <footer><p>Copyright<span class="copyright">&#169;</span> 2023 - todos os direitos reservados</p></footer>
-        
-        </section>
-
-    </div>
-
-    <div id="pop-up-lista-receitas" class="pop-up-lista-receitas">
-
-        <img class="imagem-adicionar-receitas" src="images/add_FILL0_wght400_GRAD0_opsz24.png">
-        <img class="imagem-editar-receitas" src="images/edit_FILL0_wght400_GRAD0_opsz24.png">
-
-        <a href="javascript: fecharPopUpReceitas();"><input id="botao-cancelar-receitas" class="botao-cancelar-receitas" type="submit" value="Cancelar"></input></a>
-        <a href="javascript: fecharPopUpReceitas();"><input id="botao-salvar-receitas" class="botao-salvar-receitas" type="submit" value="Salvar"></input></a>
-
-    </div>
+    <div id="body">
   
-
-    <main>
-
-        <div id="areaFiltro">
-            <label for="filtro">Busca: </label>
-            <input id="filtro" type="text" />
-            <span id="limpaFiltro">&times;</span>
+      <section class="cabecalho">
+  
+        <img class="logo-cabecalho" src="images/logo-login.png">
+  
+        <p class="text-minhas-receitas">Minhas Receitas</p>
+  
+        <a href="../minhas-despesas_Economus/tela-minhas-despesas.html">
+          <p class="text-minhas-despesas">Minhas Despesas</p>
+        </a>
+  
+        <p class="text-minhas-metas">Minhas Metas</p>
+  
+        <a href="../meu-perfil_Economus/tela-meu-perfil.html">
+          <p class="text-meu-perfil">Meu Perfil</p>
+        </a>
+  
+      </section>
+  
+      <div class="subtitulo-receitas">
+  
+        <p>Aqui você pode colocar as receitas que teve durante este Mês, atualize
+          sempre que necessário para manter o seu controle de receitas em dia</p>
+  
+      </div>
+  
+      <div class="categoria-receitas">
+  
+        <p class="text-divs-receitas">Receitas por Categoria</p>
+  
+        <table>
+          <thead>
+            <tr>
+              <th class="selecao"></th>
+              <th id="th1" class="col1">Descrição</th>
+              <th id="th2" class="col2">Valor</th>
+              <th id="th3" class="col3">Tipo</th>
+              <th id="th4" class="col4">Data</th>
+            </tr>
+          </thead>
+          <tbody id="corpoTabela"></tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">
+                <button id="btAdicionar" class="botao">Adicionar</button>
+                <button id="btEditar" class="botao">Editar</button>
+                <button id="btExcluir" class="botao">Excluir</button>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+  
+      </div>
+  
+      <div class="lista-contas">
+  
+        <div id="areaGrafico">
+  
+          <canvas id="grafico"></canvas>
         </div>
-
-
-          
-        
-          <div id="boxReceita" class="box">
-            <div class="corpoBox">
-              <header>
-                <span id="fechaBox">&times;</span>
-                <h3>RECEITAS</h3>
-              </header>
-              <p>
-                <label for="campoDescricao">Descrição: </label>
-                <input type="text" id="campoDescricao" />
-                <input type="hidden" id="campoID" />
-              </p>
-        
-              <p>
-                <label for="campoValor">Valor: </label>
-                <input type="number" id="campoValor" />
-              </p>
-        
-              <p>
-                <label for="campoTipo">Tipo: </label>
-                <select id="campoTipo">
-                  <option value="1">Fixa</option>
-                  <option value="2">Variável</option>
-                </select>
-              </p>
-        
-              <p>
-                <label for="campoData">Data: </label>
-                <input type="date" id="campoData" />
-              </p>
-        
-              <p>
-                <button id="btMTSalvar">Salvar</button>
-                <button id="btMTAlterar">Alterar</button>
-                <button id="btMTExcluir">Excluir</button>
-                <button id="btMTCancelar">Cancelar</button>
-              </p>
-            </div>
-          </div>
-
+  
+      </div>
+  
+      <div class="distribuicao-receitas">
+  
+        <p class="text-variaveis-receitas">Variáveis</p>
+        <label class="text-fixas">Fixas</label>
+  
+      </div>
+  
+      <section class="rodape">
+  
+        <footer>
+          <p>Copyright<span class="copyright">&#169;</span> 2023 - todos os direitos reservados</p>
+        </footer>
+  
+      </section>
+  
+    </div>
+    
+    <main>
+  
+      <div id="areaFiltro">
+        <label for="filtro">Busca: </label>
+        <input id="filtro" type="text" />
+        <span id="limpaFiltro">&times;</span>
+      </div>
+  
+  
+  
+  
+      <div id="boxReceita" class="box">
+        <div class="corpoBox">
+          <header>
+            <span id="fechaBox">&times;</span>
+            <h3>RECEITAS</h3>
+          </header>
+          <p>
+            <label for="campoDescricao">Descrição: </label>
+            <input type="text" id="campoDescricao" />
+            <input type="hidden" id="campoID" />
+          </p>
+  
+          <p>
+            <label for="campoValor">Valor: </label>
+            <input type="number" id="campoValor" />
+          </p>
+  
+          <p>
+            <label for="campoTipo">Tipo: </label>
+            <select id="campoTipo">
+              <option value="1">Fixa</option>
+              <option value="2">Variável</option>
+            </select>
+          </p>
+  
+          <p>
+            <label for="campoData">Data: </label>
+            <input type="date" id="campoData" />
+          </p>
+  
+          <p>
+            <button id="btMTSalvar">Salvar</button>
+            <button id="btMTAlterar">Alterar</button>
+            <button id="btMTExcluir">Excluir</button>
+            <button id="btMTCancelar">Cancelar</button>
+          </p>
+        </div>
+      </div>
+  
     </main>
-
-</body>
-</html>
+  
+  </body>
+  
+  </html>

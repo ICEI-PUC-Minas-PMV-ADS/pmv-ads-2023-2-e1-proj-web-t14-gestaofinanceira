@@ -85,22 +85,22 @@ body{
     border-radius: 8px;
     padding: 10px;
     top: 150px;
-    left: 200px;
+    left: 107px;
     width: 640px;
     font-size: 20px;
 
 }
-.categoria-receitas{
+.categoria-receitas {
     position: absolute;
     display: flex;
     flex-direction: column;
     background-color: #201B2C;
     border-radius: 10px;
-    top: 290px;
+    top: 355px;
     left: 20px;
-    width: 950px;
-    height: 180px;
-    font-size: 20px;
+    width: 900px;
+    height: 320px;
+    font-size: 15px;
     color: #ffffff;
 
 }
@@ -123,20 +123,6 @@ body{
     right: 170PX;
 
 }
-.proximas-receitas{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    background-color: #201B2C;
-    border-radius: 10px;
-    top: 500px;
-    left: 20px;
-    width: 950px;
-    height: 180px;
-    font-size: 20px;
-    color: #F0FFFF;
-
-}
 .text-divs-receitas{
     position: absolute;
     left: 20px;
@@ -146,10 +132,10 @@ body{
     position: absolute;
     background-color: #201B2C;
     color: #F0FFFF;
-    top: 290px;
-    left: 1020px;
+    top: 350px;
+    left: 960px;
     width: 450px;
-    height: 390px;
+    height: 325px;
     border-radius: 10px;
     text-align: center;
 
@@ -157,23 +143,6 @@ body{
 .text-contas{
     font-size: 20px;
     color: #F0FFFF;
-
-}
-.pop-up-lista-receitas{
-    color: #F0FFFF;
-    display: none;
-    position: fixed;
-    flex-direction: column;
-    border: 5px solid #000000;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: #201B2C;
-    width: 400px;
-    height: 550px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 25px;
 
 }
 .imagem-adicionar-receitas{
@@ -236,9 +205,9 @@ body{
 }
 .distribuicao-receitas{
     position: absolute;
-    text-align: center;
-    top: 120px;
-    left: 1020px;
+    display: flex;
+    top: 150px;
+    left: 960px;
     width: 450px;
     height: 150px;
     border-radius: 10px;
@@ -246,39 +215,17 @@ body{
     color: #F0FFFF;
 
 }
-.imagem-variaveis{
+.distribuicao-receitas p{
     position: absolute;
-    top: 35px;
-    width: 40px;
-    height: 40px;
-    left: 80px;
+    top: 50px;
 
 }
-.imagem-fixas{
+.distribuicao-receitas label{
     position: absolute;
-    top: 35px;
-    width: 40px;
-    height: 40px;
-    right: 70px;
+    top: 30 px;
 
 }
-.mes-receitas{
-    font-size: 20px;
-    margin-top: 5px;
 
-}
-.text-variaveis-receitas{
-    position: absolute;
-    top: 65px;
-    left: 70px;
-
-}
-.text-fixas-receitas{
-    position: absolute;
-    top: 65px;
-    right: 70px;
-
-}
 .copyright{
     content: '\\00A9';
 
@@ -314,16 +261,19 @@ body{
   }
   
   .corpoBox {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 10px 20px;
-    border: 1px solid #888;
-    width: 25rem;
-    min-width: 25rem;
-  
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    animation-name: animacao;
-    animation-duration: 1s
+    color: #F0FFFF;
+    position: fixed;
+    flex-direction: column;
+    border: 5px solid #000000;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #201B2C;
+    width: 400px;
+    height:450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
   }
 
   #areaGrafico {
@@ -336,4 +286,190 @@ body{
     margin-top: 2em;
     margin-bottom: 0;
   }
-  
+  select{
+    cursor: pointer;
+
+}
+.botao{
+    position: absolute;
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+    top: 280px;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+.botao:hover{
+    cursor:pointer;
+    background-color: #6495ED;
+
+
+}
+#btAdicionar{
+    background-color: #00FF7F;
+    top: 250px;
+    left: 50px;
+
+}
+#btEditar{
+    background-color: #FFD700;
+    top: 250px;
+    left: 200px;
+}
+#btExcluir{
+    background-color: #B22222;
+    top: 250px;
+    left: 350px;
+
+}
+#campoDescrição{
+    position: absolute;
+    left: 20px;
+
+}
+table{
+top: 50px;
+
+}
+tbody{
+    position: absolute;
+    padding-top: 80px;
+    font-size: 18px;
+    left: 20px;
+    overflow-y: scroll;
+    height: 160px;
+    width: 875px;
+
+}
+.celula-1, .celula-2, .celula-3,.celula-4{
+    padding-left: 110px;
+    padding-bottom: 10px;
+
+}
+#th1{
+    position: absolute;
+    left: 145px;
+    top: 50px;
+
+}
+#th2{
+    position: absolute;
+    left: 315px;
+    top: 50px;
+    
+}
+#th3{
+    position: absolute;
+    left: 525px;
+    top: 50px;
+    
+}
+#th4{
+    position: absolute;
+    left: 740px;
+    top: 50px;
+    
+}
+#btMTAlterar{
+    background-color: #FFD700;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    top: 320px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+#btMTExcluir{
+    background-color: #6495ED;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    top: 320px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.boxReceita {
+    color: #F0FFFF;
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    border: 5px solid #000000;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #201B2C;
+    width: 600px;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+}
+.corpoBox input, select{
+    color: #F0FFFF;
+    background-color: #514069;
+    border-radius: 5px;
+    height: 40px;
+    width: 180px;
+    font-size: 20px;
+
+}
+
+#btMTAlterar{
+    background-color: #FFD700;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    top: 320px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+#btMTExcluir{
+    background-color: #6495ED;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    top: 320px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+#btMTSalvar{
+    background-color: #00FF7F;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+#btMTCancelar{
+    background-color: #B22222;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.text-fixas{
+    position: absolute;
+    top: 150px;
+    
+    }
+    #areaGrafico {
+        position: absolute;
+        top: 30px;
+        left: 80px;
+        margin: 0 auto;
+        height: 280px;
+    
+    }
+    
+    #areaGrafico h3 {
+        margin-top: 2em;
+        margin-bottom: 0;
+    }

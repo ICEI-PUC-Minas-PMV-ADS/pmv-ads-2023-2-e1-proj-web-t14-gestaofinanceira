@@ -1,27 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <title>Perfil do Usuário</title>
   <link href="user-profile.css" rel="stylesheet">
+  <script defer src="user-profile.js"></script>
 </head>
+
 <body>
-  <div class="profile-container">
-    <h1>Perfil do Usuário</h1>
-    <form id="profileForm">
-      <label for="name">Nome:</label>
-      <input type="text" id="name" name="name" disabled>
+  <div id="body">
 
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" disabled>
+    <section class="cabecalho">
 
-      <label for="password">Senha:</label>
-      <input type="password" id="password" name="password" disabled>
+      <img class="logo-cabecalho" src="../imagens para o site/logo-login.png">
 
-      <button type="button" id="editBtn">Editar</button>
-      <button type="submit" id="saveBtn" style="display: none;">Salvar</button>
-    </form>
+      <p class="text-meu-perfil">Meu Perfil</p>
+
+      <a href="../minhas-receitas_Economus/tela-minhas-receitas.html">
+        <p class="text-minhas-receitas">Minhas Receitas</p>
+      </a>
+
+      <a href="../minhas-despesas_Economus/tela-minhas-despesas.html">
+        <p class="text-minhas-despesas">Minhas Despesas</p>
+      </a>
+
+      <p class="text-minhas-metas">Minhas Metas</p></a>
+
+    </section>
+
+    <section class="area-principal">
+
+
+      <div class="profile-container">
+        <p class="dados-pessoais">Dados Pessoais</p>
+        <form id="profileForm">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" disabled>
+          <br><br><br>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" disabled>
+          <br><br><br>
+
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" disabled>
+          <br><br><br>
+
+          <button type="button" id="editBtn" onclick="editarInputs()">Editar</button>
+          <button type="submit" id="saveBtn" onclick="deseditarInputs()" style="display: none;">Salvar</button>
+        </form>
+      </div>
+
+      <a href="javascript: abrirEncerrar();">
+        <p class="encerrar-sessao">Encerrar Sessão</p>
+      </a>
+
+    </section>
+
+    <section class="rodape">
+
+      <footer>
+        <p>Copyright<span class="copyright">&#169;</span> 2023 - todos os direitos reservados</p>
+      </footer>
+
+    </section>
+
   </div>
-  <script src="user-profile.js"></script>
+
+  <div id="pop-up-encerrar" class="pop-up-encerrar">
+
+    <p>Deseja encerrar a sua Sessão?</p>
+
+    <a href="javascript: fecharEncerrar ()"><input class="input-retornar" type="submit" name="Retornar"
+        value="Retornar"></a>
+    <a href="../login_Economus/tela-login.html"><input class="input-encerrar" type="submit" name="encerrar"
+        value="Encerrar"></a>
+
+  </div>
+
 </body>
+
 </html>

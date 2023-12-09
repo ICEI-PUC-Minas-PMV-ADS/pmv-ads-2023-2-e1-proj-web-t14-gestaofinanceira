@@ -1,101 +1,243 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 16px;
-    font-family: 'Times New Roman', Times, serif;
-    background: #38373d no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #3c6478;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .profile-container {
-    width: 25%;
-    background-color: #201823;
-    padding: 1em;
-    border-radius: 0.5em;
-    color: #fffafa;
-  }
-  
-  .profile-container form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .profile-container label {
-    font-weight: bold;
-  }
-  
-  .profile-container input[type="text"],
-  .profile-container input[type="email"],
-  .profile-container input[type="password"] {
-    width: 100%;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #f4f4f4;
-    background-color: #f4f4f4;
-    color: #c71e1e;
-    border-bottom: 2px solid #01ffff;
-  }
-  
-  .profile-container input[type="text"]:disabled,
-  .profile-container input[type="email"]:disabled,
-  .profile-container input[type="password"]:disabled {
-    background-color: transparent;
-    color: #f4f4f4;
-  }
-  
-  .profile-container button {
-    padding: 8px 16px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #007bff;
-    color: #f4f4f4;
-  }
-  
-  .profile-container button:hover {
-    background-color: #0056b3;
-  }
-  
-  @media screen and (max-width: 1024px) {
-    .profile-container {
-        align-self: flex-start;
-        width: 50%;
-        margin: 0em;
-        font-size: 1.5em;
-    }
+  display: flex;
+  background-color: #201B2C;
+  margin: 0;
+  font-family: 'open sans', sans-serif;
+  height: 742px;
+  width: 1488px;
 
-    .profile-container button {
-        font-size: 1em;
-    }
+}
+#body{
+  filter: none;
+  
+}
+.cabecalho{
+  display: flex;
+  background-color: #6495ED;
+  height: 110px;
+  width: 1488px;
 
-    .profile-container input[type="text"],
-    .profile-container input[type="email"],
-    .profile-container input[type="password"] {
-        width: 100%;
-        height: 2em;
-        padding: 0.5em;
-        border-radius: 5px;
-        border: 1px solid #f4f4f4;
-    }
+}
+.logo-cabecalho{
+  position: relative;
+  height: 110px;
+  width: 125px;
+  transition: background-color 0.8s ease;
+  background-color: #201B2C;
 
-  }
+}
+.logo-cabecalho:hover{
+  background-color: #6495ED;
+  cursor: pointer;
+
+}
+.text-meu-perfil{
+  position: absolute;
+  color: #F0FFFF;
+  left: 180px;
+  font-size: 40px;
+
+}
+.text-minhas-receitas{
+  position: absolute;
+  left: 830px;
+  top: 50px;
+  color: #F0FFFF;
+  font-size: 25px;
+
+}
+.text-minhas-receitas:hover{
+  color: #00FF7F;
+  text-decoration: underline;
+  cursor: pointer;
+
+}
+.text-minhas-despesas{
+  position: absolute;
+  left: 1057px;
+  top: 50px;
+  color: #F0FFFF;
+  font-size: 25px;
+
+}
+.text-minhas-despesas:hover{
+  color: #ff0606;
+  text-decoration: underline;
+  cursor: pointer;
+
+}
+.text-minhas-metas{
+  position: absolute;
+  left: 1300px;
+  top: 50px;
+  color: #F0FFFF;
+  font-size: 25px;
+
+}
+.text-minhas-metas:hover{
+  color: #FFD700;
+  text-decoration: underline;
+  cursor: pointer;
+
+}
+.dados-pessoais{
+  font-size: 35px;
+  color: #EBF0F2;
+
+}
+.profile-container{
+  position: absolute;
+  left: 150px;
+  font-size: 30px;
+  color: #F0FFFF;
+  top: 110px;
+
+}
+.profile-container label{
+  margin-bottom: 70px;
+
+}
+.profile-container input{
+  position: absolute;
+  left: 200px;
+  background-color: #514069;
+  width: 400px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 20px
+
+}
+a{
+  color: #F0FFFF;
+  text-decoration: none;
+
+}
+.encerrar-sessao{
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  font-size: 25px;
+  color: #ffffff;
+
+}
+.encerrar-sessao:hover{
+  color: #ff0000;
+  cursor: pointer;
+  text-decoration: underline;
+
+}
+.pop-up-encerrar{
+  color: #F0FFFF;
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid #000000;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #201B2C;
+  width: 370px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+}
+.pop-up-encerrar input{
+  width: 150px;
+  height: 50px;
+
+}
+.input-retornar{
+  position: absolute;
+  background-color: #00FF7F;
+  border-radius: 5px;
+  font-size: 25px;
+  left: 10px;
+  bottom: 20px;
+}
+.input-retornar:hover{
+  background-color: #6495ED;
+  cursor: pointer;
+
+}
+.input-encerrar{
+  position: absolute;
+  background-color: #B22222;
+  border-radius: 5px;
+  font-size: 25px;
+  right: 10px;
+  bottom: 20px;
+}
+.input-encerrar:hover{
+  background-color: #6495ED;
+  cursor: pointer;
+}
+.copyright{
+  content: '\\00A9';
+
+}
+.rodape{
+  display: flex;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  color: #F0FFFF;
+  background-color: #201B2C;
+  font-size: 13px;
+  top: 702px;
+  width: 1488px;
+  height: 40px;
+
+}
+button{
+  width: 120px;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 5px;
+
+}
+#editBtn{
+  background-color: #FFD700;
+
+}
+#editBtn:hover{
+  background-color: #6495ED;
+  cursor: pointer;
+
+}
+#saveBtn{
+  background-color: #00FF7F;
+  cursor: pointer;
+
+}
+#saveBtn:hover{
+  background-color: #6495ED;
+  cursor: pointer;
+
+}
+.input-retornar{
+  position: absolute;
+  background-color: #00FF7F;
+  border-radius: 5px;
+  font-size: 25px;
+  left: 10px;
+  bottom: 20px;
+}
+.input-retornar:hover{
+  background-color: #6495ED;
+  cursor: pointer;
+
+}
+.input-encerrar{
+  position: absolute;
+  background-color: #B22222;
+  border-radius: 5px;
+  font-size: 25px;
+  right: 10px;
+  bottom: 20px;
+}
+.input-encerrar:hover{
+  background-color: #6495ED;
+  cursor: pointer;
+}

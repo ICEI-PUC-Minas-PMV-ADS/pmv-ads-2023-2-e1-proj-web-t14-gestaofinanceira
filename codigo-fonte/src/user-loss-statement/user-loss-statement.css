@@ -45,7 +45,7 @@ body {
 
 .text-minhas-receitas {
     position: absolute;
-    left: 880px;
+    left: 1100px;
     top: 50px;
     color: #F0FFFF;
     font-size: 25px;
@@ -54,22 +54,6 @@ body {
 
 .text-minhas-receitas:hover {
     color: #00FF7F;
-    text-decoration: underline;
-    cursor: pointer;
-
-}
-
-.text-minhas-metas {
-    position: absolute;
-    left: 1120px;
-    top: 50px;
-    color: #F0FFFF;
-    font-size: 25px;
-
-}
-
-.text-minhas-metas:hover {
-    color: #FFD700;
     text-decoration: underline;
     cursor: pointer;
 

@@ -40,7 +40,7 @@ body {
 }
 .text-minhas-receitas{
   position: absolute;
-  left: 830px;
+  left: 1020px;
   top: 50px;
   color: #F0FFFF;
   font-size: 25px;
@@ -54,7 +54,7 @@ body {
 }
 .text-minhas-despesas{
   position: absolute;
-  left: 1057px;
+  left: 1250px;
   top: 50px;
   color: #F0FFFF;
   font-size: 25px;

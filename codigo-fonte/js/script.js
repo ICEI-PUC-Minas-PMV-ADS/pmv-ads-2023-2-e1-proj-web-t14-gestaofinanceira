@@ -31,12 +31,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const userProfitURL = '/../../codigo-fonte/src/user-profit-statement/user-profit-statement.html';
     const userLossURL = '/../../codigo-fonte/src/user-loss-statement/user-loss-statement.html';
     const userGoalsURL = '/../../codigo-fonte/src/user-goals/user-goals.html';
-    const userReportsURL = '';
 
     userProfitLink.href = userProfitURL;
     userLossLink.href = userLossURL;
     userGoalsLink.href = userGoalsURL;
-    userReportsLink.href = userReportsURL;
 });
 
 document.addEventListener(`DOMContentLoaded`, function() {

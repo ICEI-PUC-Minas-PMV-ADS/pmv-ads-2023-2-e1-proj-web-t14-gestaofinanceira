@@ -3,11 +3,30 @@ function abrirEncerrar() {
   document.getElementById('body').style.filter = 'blur(25px)'
 
 }
-function fecharEncerrar() {
-  document.getElementById('pop-up-encerrar').style.display = 'none';
-  document.getElementById('body').style.filter = 'none'
 
+function redirectToLoginPage() {
+    window.location = '/../../codigo-fonte/src/user-login/tela-de-login.html';
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const logoffButton = document.querySelector('.input-encerrar');
+    const cancelButton = document.querySelector('.input-retornar');
+
+    logoffButton.addEventListener('click', function(event) {
+        const isLoggedIn = localStorage.getItem('isLoggedIn');
+
+        if (isLoggedIn === 'true') {
+            localStorage.setItem('isLoggedIn', 'false');
+            redirectToLoginPage();
+        }
+    });
+
+    cancelButton.addEventListener('click', function(event) {
+        document.getElementById('pop-up-encerrar').style.display = 'none';
+        document.getElementById('body').style.filter = 'none';
+    });
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   const editBtn = document.getElementById('editBtn');
   const saveBtn = document.getElementById('saveBtn');

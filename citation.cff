@@ -1,0 +1,21 @@
+message: Please cite this software using these metadata.
+title: Economus - Plataforma de gestão financeira
+authors:
+  - family-names: Silva
+    given-names: Gabriel
+  - family-names: Meneses Junqueira Moreira
+    given-names: Letícia
+  - family-names: Augusto da Silva Costa
+    given-names: Miguel
+  - family-names: Branta
+    given-names: Rodiney 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Lemos Tavares
+    given-names: Clóvis
+keywords:
+  - Gestão
+  - Financeira
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t14-gestaofinanceira
+version: 1.0.0
+date-released: 2023-10-05
